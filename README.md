@@ -55,3 +55,4 @@ Command **yarn prod** create a dist folder that contains:
 - Ready html pages.
 - Compressed styles(css/app.css) & JavaScript(js/app.js).
 - Optimized images.
+# IDS
