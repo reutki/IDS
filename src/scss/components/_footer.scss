@@ -1,6 +1,6 @@
 .main-footer {
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 125px;
   padding: 120px 105px 120px 105px;
   background-color: $colorDarkBlue;
@@ -23,16 +23,20 @@
     a {
       display: flex;
       gap: 22px;
+      text-decoration: none;
+      color: $colorWhite;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
     }
   }
 
   .footer-right-text {
-    width: 350px;
     a {
       color: $colorWhite;
     }
     .copyright {
-      margin-top: 140px;
+      margin-top: 105px;
       @include text;
       p {
         margin: 0;
