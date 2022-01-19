@@ -1,0 +1,29 @@
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 125px;
+  padding: 120px 105px 120px 105px;
+  background-color: $colorDarkBlue;
+  color: $colorWhite;
+  height: max-content;
+
+  p {
+    margin-top: 40px;
+  }
+  button {
+    margin-top: 80px;
+    border: none;
+    background-color: transparent;
+    color: $colorWhite;
+    text-transform: uppercase;
+  }
+
+  .footer-right-text {
+    width: 350px;
+    a {
+      color: $colorWhite;
+    }
+  }
+  .footer-left-text {
+  }
+}
