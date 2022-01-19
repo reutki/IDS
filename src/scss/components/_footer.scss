@@ -1,14 +1,18 @@
 .main-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr;
   grid-column-gap: 125px;
   padding: 120px 105px 120px 105px;
   background-color: $colorDarkBlue;
   color: $colorWhite;
   height: max-content;
-
+  h4 {
+    font-size: 28px;
+    line-height: 42px;
+  }
   p {
     margin-top: 40px;
+    @include text;
   }
   button {
     margin-top: 80px;
@@ -16,6 +20,10 @@
     background-color: transparent;
     color: $colorWhite;
     text-transform: uppercase;
+    a {
+      display: flex;
+      gap: 22px;
+    }
   }
 
   .footer-right-text {
@@ -23,7 +31,18 @@
     a {
       color: $colorWhite;
     }
+    .copyright {
+      margin-top: 140px;
+      @include text;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
   .footer-left-text {
+    h4 {
+      width: 650px;
+    }
   }
 }

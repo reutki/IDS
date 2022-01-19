@@ -2,3 +2,8 @@ $colorPink: #e76ece;
 $colorBlack: #000;
 $colorWhite: #fff;
 $colorDarkBlue: #003c82;
+
+@mixin text {
+  line-height: 27px;
+  font-size: 18px;
+}
