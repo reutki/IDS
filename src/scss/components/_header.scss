@@ -1,0 +1,31 @@
+.main-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content 1fr max-content;
+  padding: 10px 35px 10px 35px;
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+    color: $colorBlack;
+  }
+  .active {
+    color: $colorPink;
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  gap: 120px;
+}
+
+.header-button {
+  background-color: $colorPink;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  a {
+    color: $colorWhite;
+  }
+}
