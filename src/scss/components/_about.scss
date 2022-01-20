@@ -23,14 +23,14 @@
     background-color: $colorWhite;
   }
 }
-.coloana-unu {
+.column-one {
   display: grid;
   grid-template-rows: 1fr 0.1fr;
 }
-.doi {
+.two {
   background-color: $colorWhite;
 }
-.unu {
+.one {
   background-color: $colorDarkBlue;
   height: 1fr;
   width: 1fr;
@@ -48,17 +48,17 @@
   }
 }
 
-.coloana-doi {
+.column-two {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr;
-  .trei {
+  .three {
     height: 100px;
     img {
       object-fit: cover;
       object-position: center;
     }
   }
-  .patru {
+  .four {
     background-color: $colorBlue;
     padding: 35px 115px 75px 115px;
     p {
