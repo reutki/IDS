@@ -32,6 +32,8 @@
   }
 
   .footer-right-text {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
     a {
       color: $colorWhite;
     }
@@ -45,6 +47,10 @@
     }
   }
   .footer-left-text {
+    display: grid;
+
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+
     h4 {
       width: 650px;
     }
