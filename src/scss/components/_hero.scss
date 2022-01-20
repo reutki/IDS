@@ -1,23 +1,27 @@
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-inline: 105px;
-  margin-bottom: 120px;
-
-  h1 {
-    margin-top: 120px;
-    @include title;
-  }
-  .active {
-    color: $colorPink;
-    text-transform: uppercase;
-  }
-  p {
-    line-height: 28px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .active {
-    font-weight: normal;
+  .container {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      h1 {
+        padding-top: 120px;
+      }
+      h4 {
+        margin-top: 60px;
+      }
+      p {
+        margin-top: 40px;
+      }
+      .active {
+        color: $colorPink;
+        text-transform: uppercase;
+      }
+      img {
+        padding-bottom: 120px;
+      }
+      .text {
+        padding-left: 105px;
+      }
+    }
   }
 }

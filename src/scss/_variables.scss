@@ -2,13 +2,3 @@ $colorPink: #e76ece;
 $colorBlack: #000;
 $colorWhite: #fff;
 $colorDarkBlue: #003c82;
-
-@mixin text {
-  line-height: 27px;
-  font-size: 18px;
-  letter-spacing: 1.13px;
-}
-@mixin title {
-  line-height: 75px;
-  font-size: 70px;
-}
