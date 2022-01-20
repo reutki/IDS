@@ -1,8 +1,26 @@
 .about {
   .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr max-content max-content 0.5fr;
     margin-bottom: 120px;
+  }
+}
+.grey1 {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+  background-color: $colorGrey;
+
+  .grey1-color {
+    background-color: $colorWhite;
+  }
+}
+.grey2 {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+  background-color: $colorGrey;
+
+  .grey2-color {
+    background-color: $colorWhite;
   }
 }
 .coloana-unu {
@@ -10,8 +28,7 @@
   grid-template-rows: 1fr 0.1fr;
 }
 .doi {
-  height: 80px;
-  color: $colorWhite;
+  background-color: $colorWhite;
 }
 .unu {
   background-color: $colorDarkBlue;
@@ -20,6 +37,7 @@
   color: $colorWhite;
   padding-bottom: 233px;
   padding-inline: 95px;
+
   h6 {
     text-transform: uppercase;
     margin-bottom: 60px;
