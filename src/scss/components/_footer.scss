@@ -33,7 +33,7 @@
 
   .footer-right-text {
     display: grid;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-rows: max-content 1fr max-content;
     a {
       color: $colorWhite;
     }
@@ -49,7 +49,7 @@
   .footer-left-text {
     display: grid;
 
-    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-rows: max-content 1fr max-content;
 
     h4 {
       width: 650px;
