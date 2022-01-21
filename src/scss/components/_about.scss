@@ -45,14 +45,15 @@
   }
   h3 {
     width: 255px;
+    font-family: "idealSansBook";
   }
 }
 
 .column-two {
   display: grid;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: 280px max-content;
   .three {
-    height: 100px;
+    max-height: 280px;
     img {
       object-fit: cover;
       object-position: center;
