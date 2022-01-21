@@ -1,3 +1,5 @@
+/*Colors*/
+
 $colorPink: #e76ece;
 $colorBlack: #000;
 $colorWhite: #fff;
@@ -7,3 +9,20 @@ $colorGrey: #f0f0f0;
 $colorOrange: #d84e30;
 $colorGreen: #8dc63f;
 $colorLightBlue: #eff9fd;
+
+/* Typography */
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-ideal-sans: "Ideal Sans", $font-family-base;
+$font-mercury: "Mercury Text G2", $font-family-base;
+
+$font-size-base: 18px;
+$font-size-base-mobile: 16px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-base: 27px;
+$line-height-base-mobile: 24px;
