@@ -1,0 +1,13 @@
+.dropdown {
+  margin-bottom: 120px;
+}
+.dropdown-content {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 50px;
+  justify-content: center;
+
+  h5 {
+    max-width: 760px;
+  }
+}
