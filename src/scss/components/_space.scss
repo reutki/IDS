@@ -4,12 +4,15 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.space {
+.space-content {
   position: relative;
+}
+
+.space {
   margin: 0 auto;
 }
 
-.text {
+.space-text {
   padding-left: 285px;
   padding-bottom: 170px;
   h2 {
@@ -29,10 +32,12 @@
     }
   }
 }
+//......................................... .circles.............................................//
+
 .orbit {
   position: absolute;
   top: 80px;
-  right: 120px;
+  right: -240px;
   .circleBig {
     border: 1px solid $colorPink;
     border-radius: 300px;

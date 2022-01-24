@@ -1,0 +1,28 @@
+.theIDS {
+  margin-bottom: 80px;
+  min-height: 760px;
+}
+
+.theIDS-text {
+  background-color: $colorOrange;
+  padding: 100px;
+  max-width: 740px;
+  color: $colorWhite;
+  position: absolute;
+  top: 140px;
+  left: 0;
+
+  z-index: 1;
+  p {
+    margin-top: 20px;
+  }
+}
+.theIDS-container {
+  position: relative;
+}
+.theIDS-image {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  z-index: 0;
+}

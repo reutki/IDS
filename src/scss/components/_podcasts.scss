@@ -1,0 +1,17 @@
+.podcasts {
+  margin-bottom: 80px;
+}
+.podcasts-content {
+  display: flex;
+  justify-content: center;
+  gap: 281px;
+  a {
+    color: $colorWhite;
+    background-color: $colorPink;
+    padding: 12px 24px 12px 24px;
+    text-transform: uppercase;
+  }
+  h5 {
+    max-width: 640px;
+  }
+}
