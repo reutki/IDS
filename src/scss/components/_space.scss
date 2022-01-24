@@ -1,0 +1,44 @@
+.space-content {
+  max-width: 1155px;
+  background-color: $colorGrey;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.text {
+  padding-left: 285px;
+  padding-bottom: 170px;
+  h2 {
+    padding-top: 170px;
+  }
+  p {
+    margin-top: 20px;
+    max-width: 440px;
+  }
+  a {
+    display: flex;
+    margin-top: 40px;
+    color: $colorDarkBlue;
+    .arrow {
+      color: $colorBlue;
+      margin-left: 22px;
+    }
+  }
+}
+.orbit {
+  border: 5px;
+  border-color: $colorPink;
+  border-radius: 20px;
+  .circleSmall {
+    border: 3px solid $colorPink;
+    background-color: $colorWhite;
+    border-radius: 150px;
+    width: max-content;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
