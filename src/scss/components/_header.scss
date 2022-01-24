@@ -1,28 +1,54 @@
-.main-header {
+.header-main {
+  padding: 21px 60px 21px 47px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid $colorGrey;
+  background-color: $colorWhite;
+  z-index: $zindex-sticky;
+}
+
+.header-container {
   display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  grid-template-columns: max-content 1fr max-content;
-  height: 110px;
-  text-transform: uppercase;
-  a {
-    color: $colorBlack;
-  }
-  .active {
-    color: $colorPink;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: block;
+  width: 100%;
+  max-width: 105px;
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
 .header-nav {
+  position: relative;
   display: flex;
-  justify-content: center;
-  gap: 120px;
-}
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  row-gap: 20px;
+  gap: 187px 20px;
+  @include fluidValue(padding-right, 187, 56, 1680, 1200);
+  @include fluidValue(column-gap, 120, 56, 1680, 1200);
 
-.header-button {
-  background-color: $colorPink;
-  padding: 12px 24px 12px 24px;
-  border: none;
   a {
-    color: $colorWhite;
+    font-size: $font-size-base-mobile;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.5;
+    color: $colorBlack;
+
+    &.active {
+      color: $colorPink;
+    }
   }
 }

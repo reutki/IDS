@@ -1,41 +1,46 @@
-.main-footer {
+.footer-content {
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: auto auto;
   grid-column-gap: 125px;
   padding: 120px 105px 120px 105px;
-  background-color: $colorDarkBlue;
   color: $colorWhite;
-  height: max-content;
-
-  p {
-    margin-top: 40px;
-  }
-  button {
-    margin-top: 80px;
-    border: none;
-    background-color: transparent;
+}
+.footer {
+  background-color: $colorDarkBlue;
+}
+p {
+  margin-top: 40px;
+}
+button {
+  margin-top: 80px;
+  border: none;
+  background-color: transparent;
+  color: $colorWhite;
+  text-transform: uppercase;
+  a {
+    display: flex;
+    gap: 22px;
+    text-decoration: none;
     color: $colorWhite;
-    text-transform: uppercase;
-    a {
-      display: flex;
-      gap: 22px;
-      text-decoration: none;
-      color: $colorWhite;
-    }
   }
 
   .footer-right-text {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
+    max-width: 350px;
     a {
       color: $colorWhite;
     }
     .copyright {
       margin-top: 105px;
+      a {
+        text-decoration: underline;
+      }
     }
   }
   .footer-left-text {
     display: grid;
+    max-width: 635px;
 
     grid-template-rows: max-content 1fr max-content;
   }
