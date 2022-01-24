@@ -1,71 +1,58 @@
-.message-content {
-  display: grid;
-  grid-template-columns: 0.3fr 0.4fr 1fr 0.2fr;
+.message {
   margin-bottom: 100px;
 }
-.column-one {
+.message-content {
   display: grid;
-  grid-template-rows: 1fr 0.3fr;
-}
-
-.orange {
-  background-color: $colorBlue;
-}
-
-.column-two {
-  display: grid;
-  grid-template-rows: 1fr 0.3fr;
-
-  .contact-info {
-    background-color: $colorGreen;
-    padding: 40px 65px 60px 65px;
-    color: $colorWhite;
-
-    a {
-      color: $colorWhite;
-    }
-
-    p {
-      margin-top: 18px;
-      margin-bottom: 11px;
-    }
-  }
+  grid-template-columns: auto max-content max-content auto;
+  margin: 0 auto;
+  position: relative;
 }
 
 .image-component {
-  position: relative;
-
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat (2, 0fr);
   img {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     object-fit: cover;
   }
 }
-.column-three {
-  display: grid;
-  grid-template-rows: 0.2fr 1fr;
+.blue {
+  height: 515px;
+  background-color: $colorBlue;
+}
+.contact-info {
+  background-color: $colorGreen;
+  color: $colorWhite;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  max-width: 445px;
+  padding-inline: 65px;
 
-  .message-text {
-    background-color: $colorLightBlue;
-    padding: 120px 115px 95px 115px;
-
-    h5 {
-      color: $colorPink;
-      margin-top: 20px;
-    }
-
-    p {
-      margin-top: 30px;
-    }
+  p {
+    margin-top: 20px;
+  }
+  a {
+    margin-top: 11px;
+    color: $colorWhite;
   }
 }
-.column-four {
-  display: grid;
-  grid-template-rows: 0.5fr 0.5fr;
-
-  .orange-column-four {
-    background-color: $colorOrange;
+.message-text {
+  width: 660px;
+  height: 770px;
+  background-color: $colorLightBlue;
+  padding-top: 120px;
+  padding-bottom: 95px;
+  padding-inline: 115px;
+  p {
+    margin-top: 30px;
   }
+  h5 {
+    margin-top: 20px;
+    color: $colorPink;
+  }
+}
+.orange {
+  background-color: $colorOrange;
+  height: 425px;
+  margin-top: 345px;
 }

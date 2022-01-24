@@ -1,72 +1,38 @@
 .about {
-  .about-content {
-    display: grid;
-    grid-template-columns: 1fr max-content max-content 0.5fr;
-    margin-bottom: 120px;
-  }
-}
-.grey1 {
-  display: grid;
-  grid-template-rows: 1fr 0.1fr;
+  // margin-top: 120px;
+  margin-bottom: 260px;
   background-color: $colorGrey;
+  height: 560px;
+}
 
-  .grey1-color {
-    background-color: $colorWhite;
-  }
-}
-.grey2 {
-  display: grid;
-  grid-template-rows: 1fr 0.1fr;
-  background-color: $colorGrey;
-
-  .grey2-color {
-    background-color: $colorWhite;
-  }
-}
-.column-one {
-  display: grid;
-  grid-template-rows: 1fr 0.1fr;
-}
-.two {
-  background-color: $colorWhite;
-}
-.one {
+.about-info {
   background-color: $colorDarkBlue;
-  height: 1fr;
-  width: 1fr;
   color: $colorWhite;
-  padding-bottom: 233px;
-  padding-inline: 95px;
-
+  width: 445px;
+  height: 560px;
+  padding-left: 95px;
+  padding-right: 95px;
   h6 {
     text-transform: uppercase;
-    margin-bottom: 60px;
-    margin-top: 120px;
+    padding-top: 120px;
   }
   h3 {
-    width: 255px;
-    font-family: "idealSansBook";
+    padding-top: 60px;
   }
 }
-
-.column-two {
+.about-content {
+  justify-content: center;
   display: grid;
-  grid-template-rows: 280px max-content;
-  .three {
-    max-height: 280px;
-    img {
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-  .four {
+  grid-template-columns: 0.3fr 0.4fr;
+  // background-color: $colorWhite;
+}
+.about-message {
+  display: grid;
+  grid-template-rows: 280px;
+  p {
     background-color: $colorBlue;
+    color: $colorWhite;
     padding: 35px 115px 75px 115px;
-    p {
-      width: 540px;
-      line-height: 27px;
-      font-size: 18px;
-      color: $colorWhite;
-    }
+    height: 370px;
   }
 }
