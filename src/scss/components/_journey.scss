@@ -1,0 +1,132 @@
+.journey {
+  background-color: $colorSky;
+  padding-top: 120px;
+}
+.ids-journey {
+  color: $colorWhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  h3 {
+    max-width: 350px;
+  }
+  h5 {
+    font-style: italic;
+  }
+  p {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+}
+//............................ years-bar..............................//
+.years-bar {
+  color: $colorWhite;
+}
+.circle {
+  width: 11px;
+  height: 11px;
+  background-color: $colorWhite;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.year1,
+.year2,
+.year3,
+.year4,
+.year5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.year1,
+.year2,
+.year3,
+.year4 {
+  .circle::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: white;
+    width: 280px;
+    right: -280px;
+    top: 5px;
+  }
+}
+.year5 {
+  .circle::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: white;
+    width: 80px;
+    right: -80px;
+    opacity: 0.3;
+    top: 5px;
+  }
+}
+.year1 {
+  .circle {
+    background-color: $colorPink;
+  }
+  .circle::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: white;
+    width: 80px;
+    left: -80px;
+    opacity: 0.1;
+    top: 5px;
+  }
+}
+
+.circle:hover {
+  background-color: $colorPink;
+}
+
+.years-bar {
+  display: flex;
+  gap: 200px;
+  margin-bottom: 100px;
+}
+.slides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: $colorWhite;
+  padding-bottom: 120px;
+  a {
+    color: $colorWhite;
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+  }
+  h4 {
+    margin-top: 17px;
+  }
+  h3 {
+    margin-top: 37px;
+  }
+  .slide-image {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    display: grid;
+    position: relative;
+    width: 100%;
+    .meeting {
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+    }
+    .sky {
+      z-index: 0;
+      position: absolute;
+      top: -70px;
+      left: 70px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
