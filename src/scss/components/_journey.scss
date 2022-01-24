@@ -2,6 +2,9 @@
   background-color: $colorSky;
   padding-top: 120px;
 }
+a {
+  color: white;
+}
 .ids-journey {
   color: $colorWhite;
   display: grid;
@@ -81,10 +84,6 @@
     opacity: 0.1;
     top: 5px;
   }
-}
-
-.circle:hover {
-  background-color: $colorPink;
 }
 
 .years-bar {
