@@ -1,25 +1,36 @@
 .section-hero {
-  padding-top: 52px;
-  padding-bottom: 120px;
 }
+
 .section-hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 70px;
 
   h1 {
-    margin-top: 68px;
+    margin-top: 120px;
     @include lineClamp(7);
-    margin-bottom: 60px;
+  }
+
+  h4 {
+    margin-top: 60px;
+  }
+
+  p {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  img {
+    margin-top: 52px;
+    margin-bottom: 120px;
   }
 }
 
-.hero-description {
-  max-width: 445px;
-  margin-top: 40px;
-  font-size: 24px;
-  line-height: 28px;
+.hero-content {
+  padding-left: 105px;
 }
+
 .active {
   color: $colorPink;
   text-transform: uppercase;
