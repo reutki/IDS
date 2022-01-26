@@ -1,7 +1,7 @@
 /* @TODO Mark */
 .section-about {
   position: relative;
-  margin-bottom: 260px;
+  margin-bottom: 120px;
 
   &::before {
     content: "";
@@ -37,5 +37,14 @@
   h6 {
     margin-bottom: 60px;
     text-transform: uppercase;
+  }
+}
+.about-description {
+  p {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    padding: 63px 131px 110px 110px;
+    margin-top: 0;
+    font-family: $font-family-base;
   }
 }
