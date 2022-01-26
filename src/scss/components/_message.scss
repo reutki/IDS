@@ -1,58 +1,55 @@
-.message {
+.section-message {
   margin-bottom: 100px;
-}
-.message-content {
-  display: grid;
-  grid-template-columns: auto max-content max-content auto;
-  margin: 0 auto;
   position: relative;
-}
-
-.image-component {
-  height: 100%;
-  display: grid;
-  grid-template-rows: repeat (2, 0fr);
-  img {
-    object-fit: cover;
+  .container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50% - 607px);
+    height: calc(100%);
+    background-color: $colorBlue;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(50% - 607px);
+    height: 700px;
+    background-color: $colorOrange;
+    z-index: -1;
   }
 }
-.blue {
-  height: 515px;
-  background-color: $colorBlue;
-}
-.contact-info {
+.message-contact-info {
+  max-width: 445px;
   background-color: $colorGreen;
   color: $colorWhite;
-  padding-bottom: 60px;
-  padding-top: 40px;
-  max-width: 445px;
-  padding-inline: 65px;
-
-  p {
-    margin-top: 20px;
-  }
-  a {
-    margin-top: 11px;
-    color: $colorWhite;
+  padding: 40px 65px 60px 65px;
+  position: absolute;
+  bottom: 0;
+}
+.message-image {
+  img {
+    display: block;
   }
 }
-.message-text {
-  width: 660px;
-  height: 770px;
-  background-color: $colorLightBlue;
-  padding-top: 120px;
-  padding-bottom: 95px;
-  padding-inline: 115px;
-  p {
-    margin-top: 30px;
-  }
-  h5 {
-    margin-top: 20px;
-    color: $colorPink;
-  }
+.message-contact {
+  position: relative;
+  min-height: 777px;
 }
-.orange {
-  background-color: $colorOrange;
-  height: 425px;
-  margin-top: 345px;
+.message-description {
+  position: relative;
+  .description-text {
+    position: absolute;
+    background-color: $colorLightBlue;
+    padding: 120px 115px 93px 115px;
+    max-height: 700px;
+    bottom: 0;
+  }
 }
