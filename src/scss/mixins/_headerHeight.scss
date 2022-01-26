@@ -1,0 +1,9 @@
+@mixin headerHeight {
+  height: 100px;
+  @media (max-width: 1199px) {
+    height: 70px;
+  }
+  @media (max-width: 752px) {
+    height: 40px;
+  }
+}

@@ -15,12 +15,12 @@
 
     @media (hover: hover) {
       &:hover {
-        background-color: $colorBlue;
+        background-color: $colorBlue-100;
       }
     }
 
     &:active {
-      background-color: $colorBlue;
+      background-color: $colorBlue-100;
     }
   }
 

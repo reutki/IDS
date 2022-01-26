@@ -1,9 +1,11 @@
+/* Mixins */
 @import "~normalize.css";
 @import "fonts";
 @import "variables";
 @import "helpers";
 @import "typography";
 @import "mixins/fluid-values";
+@import "mixins/headerHeight";
 @import "mixins/line-clamp";
 
 /* Components */
