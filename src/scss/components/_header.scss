@@ -1,6 +1,5 @@
 .header-main {
   padding: 21px 60px 21px 47px;
-  // @include headerHeight;
   position: fixed;
   top: 0;
   right: 0;
@@ -19,7 +18,7 @@
 }
 
 .header-logo {
-  display: block;
+  display: flex;
   width: 100%;
   max-width: 105px;
 
