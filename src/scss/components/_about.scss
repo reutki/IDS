@@ -41,7 +41,7 @@
 
 .about-description {
   display: grid;
-  // grid-template-rows: 280px;
+
   p {
     background-color: $colorBlue;
     color: $colorWhite;
@@ -53,8 +53,8 @@
 
 .about-description-image {
   height: 280px;
+
   img {
-    // display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;

@@ -1,10 +1,12 @@
 .section-message {
   margin-bottom: 100px;
   position: relative;
+
   .container {
     display: grid;
     grid-template-columns: max-content 1fr;
   }
+
   &::before,
   &::after {
     content: "";
@@ -12,6 +14,7 @@
     z-index: -1;
     width: calc(50% - 607px);
   }
+
   &::before {
     top: 0;
     left: 0;
@@ -19,6 +22,7 @@
     height: calc(100% - 254px);
     background-color: $colorBlue;
   }
+
   &::after {
     bottom: 0;
     right: 0;
@@ -26,43 +30,62 @@
     background-color: $colorOrange;
   }
 }
+
 .message-contact-info {
   background-color: $colorGreen;
   color: $colorWhite;
   padding: 40px 65px 60px 65px;
-  position: absolute;
-  bottom: 0;
+  align-self: start;
+  position: relative;
+
   p {
     padding-top: 18px;
+    max-width: 315px;
   }
+
   a {
     padding-top: 11px;
   }
 }
+
 .message-image {
+  height: 515px;
+
   img {
-    display: block;
+    object-position: top;
+    object-fit: cover;
   }
 }
+
 .message-contact {
-  position: relative;
-  // min-height: 777px;
-  // TODO MARK: change the first block to have an after for the img component
-  // TODO MARK : change the background to the whole div, add align self stretch
+  background-color: $colorGreen;
+  display: grid;
 }
+
 .message-description {
-  //TODO: add margin top 120px instead of align self end
   margin-top: 120px;
-  position: relative;
   padding: 120px 115px 93px 115px;
   background-color: $colorLightBlue;
-  align-self: end;
+
   h2 {
     margin-bottom: 20px;
   }
+
   h5 {
     //line height 33px nu 22 tre de controlat fonturile
     margin-bottom: 30px;
     color: $colorPink;
   }
 }
+
+// TODO MARK: add the code bellow to the message-contact component when we will add mobile version
+// &::after {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   content: "";
+//   background-color: #8dc63f;
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+// }
