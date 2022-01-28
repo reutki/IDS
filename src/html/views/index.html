@@ -32,49 +32,95 @@
           <a href="#">Knowledge Solutions</a>
         </nav>
         <!-- .header-nav -->
-        <a
-          class="btn primary"
-          href="#"
-          title="Download link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-labelledby="Download Manual.pdf file"
-          download="Manual.pdf"
-          >Download PDF</a
-        >
+        <div class="header-download-button">
+          <a
+            class="btn primary desktop-button"
+            href="#"
+            title="Download link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-labelledby="Download Manual.pdf file"
+            download="Manual.pdf"
+            >Download PDF</a
+          >
+          <a
+            class="btn primary mobile-button"
+            href="#"
+            title="Download link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-labelledby="Download Manual.pdf file"
+            download="Manual.pdf"
+            >Download Full Publication PDF</a
+          >
+        </div>
       </div>
+      <div class="burger-menu" onclick="mobileMenu()">
+        <div class="plate plate1" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 30,65 H 70" />
+            <path
+              class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+            />
+            <path
+              class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+            />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
+      </div>
+      <!-- .header-main  -->
+
+      <!-- .burger-menu  -->
       <!-- .header-container -->
     </header>
     <!-- .main-header -->
     <main class="main-wrapper">
-      <section class="section-hero">
-        <div class="container section-hero-container">
-          <div class="hero-content">
-            <h1>Welcome to the insert some lorem copy here</h1>
-            <h4 class="active">Vision, Learning, Collaboration.</h4>
-            <div class="hero-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="hero-img">
+      <!-- <section class="section-hero">
+    <div class="container section-hero-container">
+      <div class="hero-content">
+        <h1>Welcome to the insert some lorem copy here</h1>
+        <h4 class="active">Vision, Learning, Collaboration.</h4>
+        <div class="hero-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="hero-img">
             <img
               src="/img/joystick.svg"
               alt="cosmonaut standing on a joystick and dabbing"
             />
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- .section-hero -->
 
-      <section class="section-about">
+      <!-- <section class="section-about">
         <div class="container">
           <div class="about-titles">
             <h6>about</h6>
-            <!-- h6 to change to span  -->
-            <h3>IDS&apos;s Knowledge Management in Action</h3>
+             h6 to change to span  -->
+      <!-- <h3>IDS&apos;s Knowledge Management in Action</h3>
           </div>
-          <!-- .about-titles -->
-          <div class="about-description">
+          .about-titles -->
+      <!-- <div class="about-description">
             <div class="about-description-image">
               <img src="img/space.svg" alt="About picture" />
             </div>
@@ -87,13 +133,13 @@
               massa pharetra rutrum eu nec est. Etiam ultrices tortor sapien,
               placerat ultrices nisl viverra non.
             </p>
-          </div>
-          <!-- .about-description -->
-        </div>
-      </section>
+          </div> -->
+      <!-- .about-description -->
+      <!-- </div>
+      </section>  -->
       <!-- .section-about -->
 
-      <section class="section-message">
+      <!-- <section class="section-message">
         <div class="container">
           <div class="message-contact">
             <div class="message-image">
@@ -133,9 +179,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- .message  -->
-      <section class="dropdown">
+      <!-- <section class="dropdown">
         <div class="container">
           <div class="dropdown-content">
             <a><img src="/img/button_plus.svg" alt="plus button" /></a>
@@ -146,10 +192,10 @@
             </h5>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- .dropdown -->
-      <section class="journey">
+      <!-- <section class="journey">
         <div class="container">
           <div class="ids-journey">
             <div class="title">
@@ -227,9 +273,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- .journey -->
-      <section class="space">
+      <!-- <section class="space">
         <div class="container">
           <div class="space-content">
             <div class="space-text">
@@ -263,9 +309,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- .space  -->
-      <section class="theIDS">
+      <!-- <section class="theIDS">
         <div class="container">
           <div class="theIDS-container">
             <div class="theIDS-text">
@@ -289,9 +335,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- .theIDS  -->
-      <section class="podcasts">
+      <!-- <section class="podcasts">
         <div class="container">
           <div class="podcasts-content">
             <h5>
@@ -301,11 +347,11 @@
             <a class="btn primary" href="#">view podcasts</a>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- .Podcasts  -->
     </main>
     <!-- .main-wrapper -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-left-text">
@@ -347,8 +393,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- .main-footer -->
     <script src="js/app.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>
