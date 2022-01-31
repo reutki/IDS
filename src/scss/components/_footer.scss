@@ -10,18 +10,18 @@
   p {
     margin-top: 40px;
   }
-}
-button {
-  margin-top: 80px;
-  border: none;
-  background-color: transparent;
-  color: $colorWhite;
-  text-transform: uppercase;
-  a {
-    display: flex;
-    gap: 22px;
-    text-decoration: none;
+  button {
+    margin-top: 80px;
+    border: none;
+    background-color: transparent;
     color: $colorWhite;
+    text-transform: uppercase;
+    a {
+      display: flex;
+      gap: 22px;
+      text-decoration: none;
+      color: $colorWhite;
+    }
   }
 
   .footer-right-text {

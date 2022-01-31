@@ -19,46 +19,22 @@
     <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" /> -->
     <link rel="stylesheet" href="css/app.css" />
   </head>
+
   <body>
     <header class="header-main">
       <div class="header-container">
         <a href="/" class="header-logo">
           <img src="img/logo.svg" alt="IDS logo" />
         </a>
-        <!-- .header-logo -->
-        <nav class="header-nav">
-          <a class="active" href="#">About us</a>
-          <a href="#">Knowledge Management Journey</a>
-          <a href="#">Knowledge Solutions</a>
-        </nav>
-        <!-- .header-nav -->
-        <div class="header-download-button">
-          <a
-            class="btn primary desktop-button"
-            href="#"
-            title="Download link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-labelledby="Download Manual.pdf file"
-            download="Manual.pdf"
-            >Download PDF</a
-          >
-          <a
-            class="btn primary mobile-button"
-            href="#"
-            title="Download link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-labelledby="Download Manual.pdf file"
-            download="Manual.pdf"
-            >Download Full Publication PDF</a
-          >
-        </div>
-      </div>
-      <div class="burger-menu" onclick="mobileMenu()">
-        <div class="plate plate1" onclick="this.classList.toggle('active')">
+        <!-- .header-log -->
+        <button
+          class="burger-btn"
+          type="button"
+          title="Burger button"
+          aria-labelledby="Open menu"
+        >
           <svg
-            class="burger"
+            class="icon-burger"
             version="1.1"
             height="100"
             width="100"
@@ -75,7 +51,7 @@
             />
           </svg>
           <svg
-            class="x"
+            class="icon-cross"
             version="1.1"
             height="100"
             width="100"
@@ -84,11 +60,30 @@
             <path class="line" d="M 34,32 L 66,68" />
             <path class="line" d="M 66,32 L 34,68" />
           </svg>
+        </button>
+        <!-- .burger-btn -->
+        <div class="mobile-box">
+          <nav class="header-nav">
+            <a class="active" href="#">About us</a>
+            <a href="#">Knowledge Management Journey</a>
+            <a href="#">Knowledge Solutions</a>
+          </nav>
+          <!-- .header-nav -->
+          <a
+            class="btn primary"
+            href="pdf/document.pdf"
+            title="Download pdf file"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-labelledby="Download pdf file"
+            download="pdf.pdf"
+          >
+            <span>DOWNLOAD PDF</span>
+            <span>DOWNLOAD Full Publication PDF</span>
+          </a>
         </div>
+        <!-- .mobile-box -->
       </div>
-      <!-- .header-main  -->
-
-      <!-- .burger-menu  -->
       <!-- .header-container -->
     </header>
     <!-- .main-header -->
@@ -396,6 +391,5 @@
     </footer> -->
     <!-- .main-footer -->
     <script src="js/app.js"></script>
-    <script src="js/burger.js"></script>
   </body>
 </html>
