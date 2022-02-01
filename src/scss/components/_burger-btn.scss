@@ -10,19 +10,19 @@
   background-color: transparent;
   color: $colorBlack;
   cursor: pointer;
-  margin-right: -12px;
+  margin-right: -12px; //TODO question: why we added this margin? what it stands for?
 
   &:focus {
-    outline: none;
+    outline: none; //TODO question: it does not have any outline, why we added it?
   }
 
   @media (min-width: 1024px) {
-    display: none;
+    display: none; //will not be shown in desktop and tablet
   }
 
   @media (max-width: 767px) {
-    height: 34px;
-    width: 34px;
+    height: 54px;
+    width: 54px;
     margin-right: -10px;
   }
 

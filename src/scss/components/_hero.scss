@@ -4,10 +4,20 @@
   gap: 0 70px;
   padding-top: 52px;
   padding-bottom: 120px;
+  @media (max-width: $screenMobile) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content max-content;
+    height: 100vh;
+  }
 
   h1 {
     padding-top: 68px;
     margin-bottom: 60px;
+    @media (max-width: $screenMobile) {
+      padding-top: 0;
+      margin-bottom: 30px;
+    }
   }
 
   h4 {
@@ -20,5 +30,21 @@
     font-size: 24px;
     line-height: 28px;
     max-width: 445px;
+    @media (max-width: $screenMobile) {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: $screenMobile) {
+    .hero-img {
+      margin-top: 50px; // gap does not work
+      display: flex;
+      justify-content: start;
+      max-width: 766px;
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
   }
 }

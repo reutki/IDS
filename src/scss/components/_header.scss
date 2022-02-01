@@ -72,7 +72,7 @@
   top: 72px;
   min-height: calc(100vh - 72px);
   padding: 50px 36px 50px;
-  overflow-y: auto;
+  overflow-y: auto; //TODO question: what is difference between overflow y/x?
   -webkit-overflow-scrolling: touch;
   z-index: $zindex-fixed;
 
