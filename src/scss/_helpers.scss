@@ -18,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1199px) {
     padding-top: 72px;
   }
 
@@ -26,6 +26,14 @@ body {
     padding-top: 54px;
     font-size: $font-size-base-mobile;
     line-height: $line-height-base-mobile;
+  }
+}
+html {
+  &.no-scroll,
+  &.no-scroll body {
+    @media (max-width: 1023px) {
+      overflow: hidden;
+    }
   }
 }
 
