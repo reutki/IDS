@@ -7,15 +7,13 @@
   @media (max-width: $screenMobile) {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: max-content max-content;
-    height: 100vh;
   }
 
   h1 {
     padding-top: 68px;
     margin-bottom: 60px;
-    @media (max-width: $screenMobile) {
-      padding-top: 0;
+    @media (max-width: $screenTablet) {
+      padding-top: 30px;
       margin-bottom: 30px;
     }
   }
@@ -23,6 +21,7 @@
   h4 {
     color: $colorPink;
     text-transform: uppercase;
+    font-weight: normal;
   }
 
   p {
@@ -30,19 +29,19 @@
     font-size: 24px;
     line-height: 28px;
     max-width: 445px;
-    @media (max-width: $screenMobile) {
+    @media (max-width: $screenTablet) {
       margin-top: 20px;
     }
   }
-  @media (max-width: $screenMobile) {
-    .hero-img {
-      margin-top: 50px; // gap does not work
-      display: flex;
-      justify-content: start;
-      max-width: 766px;
+  .hero-img {
+    @media (max-width: 767px) {
+      grid-row: 1;
+    }
+
+    @media (max-width: 1199px) {
       img {
         width: 100%;
-        object-fit: cover;
+        height: 100%;
         object-position: center;
       }
     }
