@@ -28,3 +28,16 @@
 .reveal {
   display: block;
 }
+
+.up {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: rotate(180deg);
+  transition: 0.5s ease-in-out;
+}
+.rotate {
+  transition: 0.5s ease-in-out;
+  transform: rotate(90deg);
+  transform-box: fill-box;
+  transform-origin: center;
+}
