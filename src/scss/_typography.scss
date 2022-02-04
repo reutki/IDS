@@ -6,15 +6,19 @@ h5,
 h6 {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 p {
   margin: 0;
 }
+
 h1 {
   font-size: 70px;
   line-height: 75px;
+
   @media (max-width: 1199px) {
     font-size: 40px;
     line-height: 45px;
