@@ -1,4 +1,5 @@
 import './header';
+import './header';
 /* Import Styles */
 import '../scss/app.scss';
 

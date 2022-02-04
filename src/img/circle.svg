@@ -1,0 +1,11 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="circle">
+<g id="Group 36">
+<path id="Path" d="M25 50C11.2156 50 0 38.7844 0 25C0 11.2156 11.2156 0 25 0C38.7844 0 50 11.2156 50 25C50 38.7844 38.7844 50 25 50Z" fill="#F37E26"/>
+</g>
+<g id="plus">
+<rect id="up" x="23.7969" y="12" width="2.40741" height="26" rx="1.2037" fill="white"/>
+<path id="down" fill-rule="evenodd" clip-rule="evenodd" d="M36.7963 23.7964C37.4611 23.7964 38 24.3353 38 25.0001C38 25.6649 37.4611 26.2038 36.7963 26.2038H13.2037C12.5389 26.2038 12 25.6649 12 25.0001C12 24.3353 12.5389 23.7964 13.2037 23.7964H36.7963Z" fill="white"/>
+</g>
+</g>
+</svg>

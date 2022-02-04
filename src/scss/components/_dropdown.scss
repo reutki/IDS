@@ -10,4 +10,21 @@
   h5 {
     max-width: 760px;
   }
+  button {
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+  }
+}
+
+.dropdown-article {
+  @include lineClamp(3);
+}
+
+.reveal {
+  display: block;
 }
