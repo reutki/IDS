@@ -1,23 +1,40 @@
 .dropdown {
   margin-bottom: 120px;
-}
-.dropdown-content {
-  display: grid;
-  grid-template-columns: max-content auto;
-  column-gap: 50px;
-  justify-content: center;
 
-  h5 {
-    max-width: 760px;
-  }
-  button {
-    cursor: pointer;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    width: max-content;
-    height: max-content;
+  .container {
+    grid-template-columns: max-content auto;
+    column-gap: 50px;
+    justify-content: center;
+
+    @media (max-width: 769px) {
+      grid-template-columns: unset;
+      justify-content: start;
+      row-gap: 20px;
+    }
+
+    p {
+      max-width: 760px;
+      font-size: 22px;
+      line-height: 33px;
+
+      @media (max-width: 1199px) {
+        max-width: 500px;
+      }
+
+      @media (max-width: 769px) {
+        max-width: 100%;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      width: max-content;
+      height: max-content;
+    }
   }
 }
 
@@ -33,10 +50,11 @@
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(180deg);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
+
 .rotate {
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   transform: rotate(90deg);
   transform-box: fill-box;
   transform-origin: center;
