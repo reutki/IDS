@@ -5,18 +5,24 @@
   padding-top: 52px;
   padding-bottom: 120px;
 
-  @media (max-width: $screenMobile) {
+  @media (max-width: 767px) {
     display: grid;
     grid-template-columns: auto;
+    row-gap: 40px;
   }
 
   h1 {
     padding-top: 68px;
     margin-bottom: 60px;
 
-    @media (max-width: $screenTablet) {
+    @media (max-width: 1199px) {
       padding-top: 30px;
       margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 50px;
+      margin-bottom: 40px;
+      width: 100%;
     }
   }
 
@@ -34,9 +40,6 @@
 
 .hero-img {
   display: grid;
-  @media (max-width: 767px) {
-    grid-row: 1;
-  }
 
   @media (max-width: 1199px) {
     img {
