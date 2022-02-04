@@ -79,10 +79,16 @@
 
 .about-description {
   align-self: start;
-  padding: 86px 115px;
+  padding: 20px;
   background-color: $colorBlue;
   font-family: $font-family-base;
   font-weight: normal;
   font-style: normal;
   color: $colorWhite;
+  @media (min-width: 767px) {
+    padding: 50px;
+  }
+  @media (min-width: 1199px) {
+    padding: 86px 115px;
+  }
 }
