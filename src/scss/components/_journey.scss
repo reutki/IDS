@@ -1,130 +1,163 @@
 .section-journey {
   background-color: $colorSky;
-  padding-top: 120px;
-}
-a {
-  color: white;
-}
-.ids-journey {
+  padding: 120px 0;
   color: $colorWhite;
+}
+
+.journey-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: max-content 1fr;
+  margin-bottom: 80px;
+  gap: 227px;
+
   h3 {
-    max-width: 350px;
-  }
-  h5 {
-    font-style: italic;
-  }
-  p {
-    margin-top: 30px;
-    margin-bottom: 80px;
-  }
-}
-.years-bar {
-  color: $colorWhite;
-}
-.circle {
-  width: 11px;
-  height: 11px;
-  background-color: $colorWhite;
-  border-radius: 50px;
-  margin-bottom: 25px;
-  position: relative;
-}
-.year1,
-.year2,
-.year3,
-.year4,
-.year5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.year1,
-.year2,
-.year3,
-.year4 {
-  .circle::after {
-    content: "";
-    position: absolute;
-    margin: auto;
-    height: 2px;
-    background: white;
-    width: 280px;
-    right: -280px;
-    top: 5px;
-  }
-}
-.year5 {
-  .circle::after {
-    content: "";
-    position: absolute;
-    margin: auto;
-    height: 2px;
-    background: white;
-    width: 80px;
-    right: -80px;
-    opacity: 0.3;
-    top: 5px;
-  }
-}
-.year1 {
-  .circle {
-    background-color: $colorPink;
-  }
-  .circle::before {
-    content: "";
-    position: absolute;
-    margin: auto;
-    height: 2px;
-    background: white;
-    width: 80px;
-    left: -80px;
-    opacity: 0.1;
-    top: 5px;
+    width: 343px;
+    font-family: $font-family-base;
+    font-weight: normal;
   }
 }
 
-.years-bar {
-  display: flex;
-  gap: 200px;
-  margin-bottom: 100px;
+.description {
+  max-width: 540px;
+
+  em {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 33px;
+    font-family: $font-mercury;
+  }
+
+  p {
+    font-family: $font-family-base;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
-.slides {
+
+// ...................axis..........................//
+
+.years-axis {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: $colorWhite;
-  padding-bottom: 120px;
+  grid-template-columns: repeat(5, max-content);
+  gap: 196px;
+  justify-items: start;
+  margin-left: -50px;
+  position: relative;
+  padding-bottom: 60px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1320px;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0.09),
+      rgba(252, 252, 252, 1)
+    );
+    top: 5px;
+    left: -57px;
+  }
+
+  button {
+    margin: 0;
+    padding: 30px 0 0 0;
+    border: 0;
+    background: transparent;
+    color: $colorWhite;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 11px;
+      height: 11px;
+      background: $colorWhite;
+      top: 0px;
+      left: 49%;
+      border-radius: 10.5px;
+    }
+  }
+
+  button:last-of-type {
+    &::after {
+      display: none;
+    }
+  }
+
+  button:hover {
+    &::before {
+      background: $colorPink;
+    }
+  }
+}
+
+.journey-slides {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 85px;
+}
+
+.slide-info {
+  max-width: 440px;
+  padding-top: 55px;
+  img {
+    margin-bottom: 37px;
+  }
+  h3 {
+    font-style: italic;
+    font-family: $font-mercury;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+
+  h4 {
+    font-style: italic;
+    font-family: $font-ideal-sans;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+  span {
+    display: inline-block;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-medium;
+  }
+  p {
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 35px;
+  }
   a {
     color: $colorWhite;
-    margin-top: 35px;
+    text-transform: uppercase;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 24px;
     display: flex;
     gap: 20px;
   }
-  h4 {
-    margin-top: 17px;
+}
+
+.slide-image {
+  position: relative;
+  width: 100%;
+
+  .meeting {
+    position: absolute;
+    top: 40px;
+    z-index: 1;
   }
-  h3 {
-    margin-top: 37px;
-  }
-  .slide-image {
-    margin-top: 50px;
-    margin-bottom: 120px;
-    display: grid;
-    position: relative;
-    width: 100%;
-    .meeting {
-      z-index: 1;
-      top: 50%;
-      left: 50%;
-    }
-    .sky {
-      z-index: 0;
-      position: absolute;
-      top: -70px;
-      left: 70px;
-      right: 0;
-      bottom: 0;
-    }
+  .sky {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 63px;
+    right: 88px;
   }
 }
