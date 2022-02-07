@@ -45,16 +45,6 @@
 
 .reveal {
   display: block;
-  &::after {
-    content: "Copiat!";
-    font-size: 100px;
-    color: red;
-    width: 100vw;
-    height: 50vh;
-    position: absolute;
-    top: 20px;
-    left: 10px;
-  }
 }
 
 .up {
