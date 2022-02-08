@@ -20,6 +20,7 @@
       left: 0;
       height: calc(100% - 657px);
       background-color: $colorBlue;
+      @include fluidValue("max-height", 1040, 414, 767, 320);
 
       @media (min-width: 1199px) {
         height: calc(100% - 264px);
@@ -62,6 +63,7 @@
 
 .message-contact-info {
   padding: 40px 25px;
+
   @media (min-width: 1199px) {
     padding: 40px 65px 59px 65px;
   }
