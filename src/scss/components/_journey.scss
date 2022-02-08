@@ -8,10 +8,10 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   margin-bottom: 80px;
-  gap: 227px;
+  gap: 64px;
 
   h3 {
-    width: 343px;
+    max-width: 343px;
     font-family: $font-family-base;
     font-weight: normal;
   }
@@ -19,6 +19,7 @@
 
 .description {
   max-width: 540px;
+  justify-self: end;
 
   em {
     display: inline-block;
@@ -31,8 +32,6 @@
   p {
     font-family: $font-family-base;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
   }
 }
 
@@ -91,7 +90,7 @@
   button:hover {
     &::before {
       background: $colorPink;
-      animation: scaleIn 1s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+      animation: scaleIn 1s infinite ease-in;
 
       @keyframes scaleIn {
         from {
