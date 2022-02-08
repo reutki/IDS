@@ -117,6 +117,7 @@
   padding-top: 55px;
 
   .slide-icon {
+    display: grid;
     background-color: $colorPink;
     width: 90px;
     height: 90px;
@@ -170,21 +171,67 @@
   }
 }
 
+// ............................frame....................
 .slide-image {
   position: relative;
   width: 100%;
+  display: block;
+  background-color: $colorWhite;
+}
+.slider {
+  position: relative;
+}
+.sky {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 63px;
+  right: 88px;
+}
 
-  .meeting {
-    position: absolute;
-    top: 40px;
-    z-index: 1;
-  }
+.slide-image {
+  position: relative;
+  width: 100%;
+  display: grid;
+  background-color: $colorWhite;
+}
+.slider {
+  position: relative;
+}
+.sky {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 63px;
+  right: 88px;
+}
 
-  .sky {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 63px;
-    right: 88px;
+.frame {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  .frame-bar {
+    background-color: $colorGrey;
+    height: 28px;
+    width: 692px;
+    border-radius: 5px;
+    .circles {
+      display: flex;
+      gap: 10px;
+      padding: 8px;
+    }
+
+    .circle:first-of-type {
+      background-color: $colorOrange;
+    }
+    .circle {
+      background-color: $colorYellow;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+    }
+    .circle:last-of-type {
+      background-color: $colorGreen;
+    }
   }
 }
