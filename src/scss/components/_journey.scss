@@ -169,7 +169,6 @@
 .slide-image3 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
 }
 .slide-image2 {
   background-color: red;
@@ -178,7 +177,7 @@
   background-color: green;
 }
 
-// ............................frame.......................//
+// ............................swiper.......................//
 .swiper {
   overflow: hidden;
 }
@@ -190,4 +189,66 @@
   grid-template-columns: max-content 1fr;
   gap: 85px;
   object-fit: contain;
+}
+
+//..............................//
+.frame {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+
+  .frame-bar {
+    background-color: $colorGrey;
+    height: 20px;
+    width: 692px;
+    border-radius: 6px 6px 0px 0px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 410px;
+      left: 0;
+      background-color: $colorWhite;
+      height: 9px;
+      width: 692px;
+      border-radius: 0px 0px 6px 6px;
+    }
+  }
+  .circles {
+    display: flex;
+    padding: 7px;
+  }
+
+  .circle {
+    background-color: yellow;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-left: 16px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+    }
+
+    &::before {
+      background-color: $colorOrange;
+      left: 8px;
+    }
+
+    &::after {
+      background-color: $colorGreen;
+      left: 38px;
+    }
+  }
+}
+.sky {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 49%;
 }
