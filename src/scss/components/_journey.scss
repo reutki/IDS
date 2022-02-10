@@ -183,6 +183,7 @@
 }
 .swiper-wrapper {
   height: 600px;
+  display: flex;
 }
 .swiper-slide {
   display: grid;
@@ -254,21 +255,16 @@
 }
 
 .swiper-pagination {
-  height: 20px;
   display: flex;
-  margin: 50px 0;
+  gap: 264px;
 }
-.swiper-pagination-bullet-active {
-  background-color: green;
-  color: green;
+.Bullet {
+  background: white;
   height: 10px;
   width: 10px;
   border-radius: 50%;
+  cursor: pointer;
 }
-.swiper-pagination-bullet {
-  background: red;
-  color: red;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
+.BulletActive {
+  background: $colorPink;
 }
