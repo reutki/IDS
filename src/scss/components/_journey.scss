@@ -11,8 +11,9 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   margin-bottom: 80px;
-  gap: 64px;
-
+  gap: 227px;
+  @include fluidValue("gap", 227, 64, 2000, 1200);
+  @include fluidValue("gap", 64, 20, 1199, 768);
   h3 {
     max-width: 343px;
     font-family: $font-family-base;

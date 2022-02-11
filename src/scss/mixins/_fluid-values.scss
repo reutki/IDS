@@ -9,7 +9,7 @@
  * @description Mixin fluidValue return CSS properties and values.
  * @example @include fluidValue("font-size", 50, 20, 1100, 320);
  */
- @mixin fluidValue(
+@mixin fluidValue(
   $property,
   $maxValue,
   $minValue,
