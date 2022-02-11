@@ -8,6 +8,7 @@ var swiper = new Swiper(".journey-slider", {
   fadeEffect: {
     crossFade: true,
   },
+  slidesPerView: 1,
 
   pagination: {
     el: ".swiper-pagination",

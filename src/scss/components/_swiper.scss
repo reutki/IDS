@@ -2,6 +2,7 @@
   width: $container-max-width;
   height: 100%;
 }
+
 .swiper-wrapper {
   width: $container-max-width;
   height: 550px;
@@ -14,21 +15,27 @@
   position: absolute;
   top: 0;
 }
+
 .slide1 {
   left: 0;
 }
+
 .slide2 {
   left: 100%;
 }
+
 .slide3 {
   left: 200%;
 }
+
 .slide4 {
   left: 300%;
 }
+
 .slide5 {
   left: 400%;
 }
+
 .slide1,
 .slide2,
 .slide3,
@@ -38,6 +45,16 @@
   grid-template-columns: max-content 1fr;
   justify-content: space-between;
   gap: 90px;
+  @media (max-width: 767px) {
+    grid-template-columns: unset;
+  }
+  .slide-image1 {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    display: block;
+  }
+
   .slide-info {
     max-width: 440px;
     padding-top: 55px;
@@ -52,15 +69,19 @@
       justify-content: center;
       align-items: center;
     }
+
     .icon2 {
       background-color: $colorOrange;
     }
+
     .icon3 {
       background-color: $colorRed;
     }
+
     .icon4 {
       background-color: $colorGreen;
     }
+
     .icon5 {
       background-color: $colorBlue;
     }
@@ -108,6 +129,7 @@
       }
     }
   }
+
   .frame {
     position: absolute;
     z-index: 1;
@@ -130,6 +152,7 @@
         border-radius: 0px 0px 6px 6px;
       }
     }
+
     .circles {
       display: flex;
       padding: 7px;
@@ -162,6 +185,7 @@
       }
     }
   }
+
   .sky {
     position: absolute;
     z-index: -1;
@@ -172,12 +196,15 @@
     &.borderOrange {
       border-bottom: 10px solid $colorOrange;
     }
+
     &.borderRed {
       border-bottom: 10px solid $colorRed;
     }
+
     &.borderGreen {
       border-bottom: 10px solid $colorGreen;
     }
+
     &.borderBlue {
       border-bottom: 10px solid $colorBlue;
     }
@@ -208,14 +235,19 @@
   justify-content: space-around;
   z-index: 1;
   margin-bottom: 60px;
-  width: 1320px;
+  max-width: 1320px;
 
   @media (max-width: 1199px) {
     padding-bottom: 70px;
+    width: 100%;
+    gap: 74px;
   }
 
   @media (max-width: 767px) {
     padding-bottom: 94px;
+    display: grid;
+    max-width: 100%;
+    gap: 20px;
   }
 
   &::after {
@@ -271,6 +303,7 @@
     background-color: currentColor;
     transition: background-color 0.5s ease-in;
     z-index: 1;
+
     @media (max-width: 767px) {
       position: relative;
       top: unset;
@@ -294,9 +327,11 @@
   0% {
     box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
   }
+
   70% {
     box-shadow: 0 0 0 10px rgba($colorPink, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba($colorPink, 0);
   }
