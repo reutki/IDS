@@ -14,15 +14,27 @@
   gap: 227px;
   @include fluidValue("gap", 227, 64, 2000, 1200);
   @include fluidValue("gap", 64, 20, 1199, 768);
+  @media (max-width: 767px) {
+    grid-template-columns: unset;
+  }
   h3 {
     max-width: 343px;
     font-family: $font-family-base;
     font-weight: normal;
+    @media (max-width: 1199px) {
+      max-width: 296px;
+      font-family: $font-ideal-sans;
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 }
 .description {
-  max-width: 540px;
-  justify-self: end;
+  @media (min-width: 768px) {
+    max-width: 540px;
+    justify-self: end;
+  }
+  max-width: 100%;
 
   em {
     display: inline-block;
