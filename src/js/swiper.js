@@ -15,7 +15,13 @@ var swiper = new Swiper(".swiper", {
     hideOnClick: true,
     renderBullet: function (index, className) {
       return (
-        '<span class="' + className + '">' + Years[index] + "</span>"
+        '<div class="' +
+        className +
+        '">' +
+        '<span class="year">' +
+        Years[index] +
+        "</span>" +
+        "</div>"
         // console.log("Info:" + className + " " + Years[index])
       );
     },
