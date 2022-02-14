@@ -51,6 +51,7 @@
 }
 
 .space-slider {
+  animation: rotation 20s linear infinite;
   border: solid 1px $colorPink;
   background: transparent;
   border-radius: 50%;
@@ -74,8 +75,19 @@
     border-radius: 50%;
     border: solid 2px $colorPink;
     top: -5px;
+    background-color: $colorWhite;
   }
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(395deg);
+  }
+}
+
 .space-wrapper {
   border-radius: 50%;
   background-color: $colorWhite;
