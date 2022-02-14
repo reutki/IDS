@@ -1,19 +1,19 @@
-.swiper {
+.journey-slider {
   width: $container-max-width;
   height: 100%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
-.swiper-wrapper {
+.journey-container {
   width: $container-max-width;
   height: 550px;
   display: flex;
   position: relative;
-}
-
-.swiper-slide {
-  max-width: $container-max-width;
-  position: absolute;
-  top: 0;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .slide1 {
@@ -35,57 +35,87 @@
 .slide5 {
   left: 400%;
 }
+.slide-icon {
+  margin-bottom: 37px;
 
-.slide1,
-.slide2,
-.slide3,
-.slide4,
-.slide5 {
+  @media (min-width: 1199px) {
+    width: 90px;
+    height: 90px;
+  }
+
+  circle {
+    fill: $colorPink;
+  }
+
+  path {
+    fill: $colorWhite;
+  }
+
+  .slide2 & {
+    circle {
+      fill: $colorOrange;
+    }
+  }
+
+  .slide3 & {
+    circle {
+      fill: $colorRed;
+    }
+  }
+
+  .slide4 & {
+    circle {
+      fill: $colorGreen;
+    }
+  }
+
+  .slide5 & {
+    circle {
+      fill: $colorBlue;
+    }
+  }
+}
+
+.swiper-slide {
   display: grid;
   grid-template-columns: max-content 1fr;
   justify-content: space-between;
-  gap: 90px;
+  // gap: 90px;
+  @include fluidValue(gap, 90, 70, 1600, 1200);
+  max-width: $container-max-width;
+  position: absolute;
+  top: 0;
   @media (max-width: 767px) {
     grid-template-columns: unset;
   }
+
   .slide-image1 {
     @media (max-width: 767px) {
       display: none;
     }
-    display: block;
+    .image {
+      background-color: $colorWhite;
+    }
+
+    .meeting {
+      @media (max-width: 1199px) {
+        max-width: 335px;
+        max-height: 189px;
+      }
+    }
   }
 
   .slide-info {
     max-width: 440px;
     padding-top: 55px;
-
-    .slide-icon {
-      display: grid;
-      background-color: $colorPink;
-      width: 90px;
-      height: 90px;
-      border-radius: 45px;
-      margin-bottom: 37px;
-      justify-content: center;
-      align-items: center;
+    @media (max-width: 1199px) {
+      max-width: 296px;
+      padding-top: 0px;
     }
 
-    .icon2 {
-      background-color: $colorOrange;
+    @media (max-width: 767px) {
+      max-width: 100%;
     }
-
-    .icon3 {
-      background-color: $colorRed;
-    }
-
-    .icon4 {
-      background-color: $colorGreen;
-    }
-
-    .icon5 {
-      background-color: $colorBlue;
-    }
-
     h3 {
       font-style: italic;
       font-family: $font-mercury;
@@ -134,23 +164,30 @@
     position: absolute;
     z-index: 1;
     top: 40px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 410px;
+      left: 0;
+      background-color: $colorWhite;
+      height: 9px;
+      width: 692px;
+      border-radius: 0px 0px 6px 6px;
+      @media (max-width: 1199px) {
+        width: 335px;
+        height: 9px;
+        top: 194px;
+      }
+    }
+    @media (max-width: 1199px) {
+      margin-top: 70px;
+    }
 
     .frame-bar {
       background-color: $colorGrey;
       height: 20px;
       width: 692px;
       border-radius: 6px 6px 0px 0px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 410px;
-        left: 0;
-        background-color: $colorWhite;
-        height: 9px;
-        width: 692px;
-        border-radius: 0px 0px 6px 6px;
-      }
     }
 
     .circles {
@@ -192,6 +229,14 @@
     top: 0;
     left: 49%;
     border-bottom: 10px solid $colorPink;
+    @media (max-width: 1199px) {
+      max-width: 267px;
+      left: 34%;
+      top: 90px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
 
     &.borderOrange {
       border-bottom: 10px solid $colorOrange;
@@ -226,31 +271,27 @@
   justify-content: center;
   position: relative;
 }
-
-.swiper-pagination {
+/* Journey Pagination */
+.journey-pagination {
   position: relative;
   display: flex;
-  margin: 0 auto;
-  gap: 194px;
   justify-content: space-around;
-  z-index: 1;
-  margin-bottom: 60px;
+  @include fluidValue(gap, 194, 77, 1680, 768);
   max-width: 1320px;
+  margin: 0 auto 60px;
+  z-index: 1;
 
   @media (max-width: 1199px) {
-    padding-bottom: 70px;
-    width: 100%;
-    gap: 74px;
+    gap: 0;
+    max-width: 768px;
   }
 
   @media (max-width: 767px) {
-    padding-bottom: 94px;
-    display: grid;
-    max-width: 100%;
-    gap: 20px;
+    width: 100%;
+    direction: rtl;
   }
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -282,15 +323,11 @@
 
   @media (max-width: 767px) {
     position: absolute;
-    top: -44px;
-    right: 0;
+    top: -42px;
     width: 100%;
     grid-template-columns: max-content max-content;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 0;
     visibility: hidden;
-    opacity: 0;
   }
 
   &::before {
@@ -337,11 +374,11 @@
   }
 }
 
-.swiper-slide-active {
-  .slide-info {
-    animation: slide-up 1s ease-in;
-  }
-}
+// .swiper-slide-active {
+//   .slide-info {
+//     animation: slide-up 1s ease-in;
+//   }
+// }
 
 @keyframes slide-up {
   from {

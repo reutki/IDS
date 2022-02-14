@@ -1,76 +1,90 @@
-.space-content {
-  max-width: 1155px;
-  background-color: $colorGrey;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-.space-content {
+.section-space {
   position: relative;
-}
+  margin: 120px 0px 100px 0px;
 
-.space {
-  margin: 0 auto;
+  &::before {
+    content: "";
+    background-color: $colorGrey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 30%;
+    height: 100%;
+    z-index: -1;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    @include fluidValue(height, 680, 450, 1680, 768);
+  }
 }
-
-.space-text {
-  padding-left: 285px;
-  padding-bottom: 170px;
+.space-content {
+  align-self: center;
   h2 {
-    padding-top: 170px;
+    margin-bottom: 20px;
+    font-family: $font-family-base;
   }
   p {
-    margin-top: 20px;
-    max-width: 440px;
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 40px;
+    @include fluidValue(width, 440, 336, 1680, 1199);
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      font-style: italic;
+      line-height: 24px;
+    }
   }
   a {
     display: flex;
-    margin-top: 40px;
-    color: $colorDarkBlue;
-    .arrow {
-      color: $colorBlue;
-      margin-left: 22px;
+    gap: 22px;
+    color: $colorPink;
+    @media (max-width: 1199px) {
+      gap: 21px;
     }
   }
+  h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $font-ideal-sans;
+  }
 }
-//......................................... .circles.............................................//
 
-.orbit {
-  position: absolute;
-  top: 80px;
-  right: -240px;
-  .circleBig {
-    border: 1px solid $colorPink;
-    border-radius: 300px;
-    width: max-content;
-    height: 480px;
-    width: 480px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  .circleSmall {
-    border: 1px solid $colorPink;
-    background-color: $colorWhite;
-    border-radius: 150px;
-    width: max-content;
-    height: 250px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .moon {
-    border: 3px solid $colorPink;
-    background-color: $colorWhite;
-    border-radius: 150px;
-    width: max-content;
-    height: 20px;
-    width: 20px;
+.space-slider {
+  border: solid 1px $colorPink;
+  background: transparent;
+  border-radius: 50%;
+  @include fluidValue(width, 480, 280, 1680, 1200);
+  @include fluidValue(height, 480, 280, 1680, 1200);
+  @include fluidValue(width, 280, 296, 1199, 768);
+  @include fluidValue(height, 280, 296, 1199, 768);
+  @include fluidValue(width, 296, 0, 760, 0);
+  @include fluidValue(height, 296, 0, 760, 0);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  &::after {
     position: absolute;
-    top: 30px;
-    right: 95px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 2px $colorPink;
+    top: -5px;
   }
+}
+.space-wrapper {
+  border-radius: 50%;
+  background-color: $colorWhite;
+
+  border: solid 1px $colorPink;
+  @include fluidValue(width, 250, 143, 1680, 1200);
+  @include fluidValue(height, 250, 143, 1680, 1200);
+  @include fluidValue(width, 140, 155, 1199, 768);
+  @include fluidValue(height, 140, 155, 1199, 768);
+  @include fluidValue(width, 155, 0, 767, 0);
+  @include fluidValue(height, 155, 0, 767, 0);
 }
