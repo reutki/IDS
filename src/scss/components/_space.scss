@@ -67,6 +67,7 @@
   justify-self: center;
   align-self: center;
   position: relative;
+
   &::after {
     position: absolute;
     content: "";
@@ -91,7 +92,6 @@
 .space-wrapper {
   border-radius: 50%;
   background-color: $colorWhite;
-
   border: solid 1px $colorPink;
   @include fluidValue(width, 250, 143, 1680, 1200);
   @include fluidValue(height, 250, 143, 1680, 1200);

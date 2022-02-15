@@ -1,6 +1,9 @@
 .section-journey {
   background-color: $colorSky;
   padding: 120px 0;
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
   color: $colorWhite;
   .container {
     overflow: hidden;
