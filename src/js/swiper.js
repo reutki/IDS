@@ -21,3 +21,21 @@ var swiper = new Swiper(".journey-slider", {
     },
   },
 });
+
+var circleSwiper = new Swiper(".space-slider", {
+  modules: [Pagination, Navigation, EffectFade],
+  wrapperClass: "space-wrapper",
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: ".space-pagination",
+    clickable: false,
+    type: "fraction",
+    renderFraction: function (currentClass, totalClass) {
+      return `<div class="${currentClass}"> ${currentClass} </div>
+      <div class="counter">${totalClass}</div> `;
+    },
+  },
+});
