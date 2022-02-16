@@ -1,223 +1,181 @@
-.journey-slider {
-  width: $container-max-width;
-  height: 100%;
+/* Journey Pagination */
+.journey-pagination {
+  position: relative;
+  display: flex;
+  @include fluidValue(gap, 194, 77, 1680, 768);
+  @include fluidValue(width, 1320, 750, 1680, 768);
+  margin: 0 auto 60px;
+  z-index: 1;
 
-  @media (max-width: 767px) {
+  &::before {
+    content: "";
+    position: absolute;
     width: 100%;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(132, 191, 65, 0.09),
+      rgba(252, 252, 252, 1)
+    );
+    border-image-slice: 1;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.journey-bullet {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  padding-top: 15px;
+  color: $colorWhite;
+  font-weight: $font-weight-normal;
+  font-style: italic;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
   }
 
-  .swiper-slide {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    justify-content: space-between;
-    @include fluidValue(gap, 90, 70, 1600, 1200);
-    max-width: $container-max-width;
+  &::before {
+    content: "";
     position: absolute;
-    top: 0;
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: currentColor;
+    transition: background-color 0.5s ease-in;
+    z-index: 1;
+  }
 
-    @media (max-width: 767px) {
-      grid-template-columns: unset;
+  &.is-active {
+    &::before {
+      background-color: $colorPink;
+      animation: pulsePaginationBulletAnimation 2s infinite;
     }
-  
-    .slide-image1 {
-      
-      @media (max-width: 767px) {
-        display: none;
-      }
+  }
+  @keyframes pulsePaginationBulletAnimation {
+    0% {
+      box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
+    }
 
-      .image {
-        background-color: $colorWhite;
-      }
-  
-      .meeting {
-        @media (max-width: 1199px) {
-          max-width: 335px;
-          max-height: 189px;
-        }
-      }
+    70% {
+      box-shadow: 0 0 0 10px rgba($colorPink, 0);
     }
-  
-    .slide-info {
-      max-width: 440px;
-      padding-top: 55px;
-      @media (max-width: 1199px) {
-        max-width: 296px;
-        padding-top: 0px;
-      }
-  
-      @media (max-width: 767px) {
-        max-width: 100%;
-      }
-      h3 {
-        font-style: italic;
-        font-family: $font-mercury;
-        font-weight: 400;
-        margin-bottom: 17px;
-      }
-  
-      h4 {
-        font-style: italic;
-        font-family: $font-ideal-sans;
-        font-weight: 400;
-        margin-bottom: 17px;
-      }
-  
-      span {
-        display: inline-block;
-        font-family: $font-ideal-sans;
-        font-weight: $font-weight-medium;
-      }
-  
-      p {
-        font-family: $font-ideal-sans;
-        font-size: 18px;
-        line-height: 27px;
-        margin-bottom: 35px;
-      }
-  
-      a {
-        color: $colorWhite;
-        text-transform: uppercase;
-        font-family: $font-ideal-sans;
-        font-weight: $font-weight-semibold;
-        letter-spacing: 1px;
-        font-size: 16px;
-        line-height: 24px;
-        display: flex;
-        gap: 20px;
-  
-        img {
-          align-items: center;
-        }
-      }
-    }
-  
-    .frame {
-      position: absolute;
-      z-index: 1;
-      top: 40px;
-      &::after {
-        content: "";
-        position: absolute;
-        top: 410px;
-        left: 0;
-        background-color: $colorWhite;
-        height: 9px;
-        width: 692px;
-        border-radius: 0px 0px 6px 6px;
-        @media (max-width: 1199px) {
-          width: 335px;
-          height: 9px;
-          top: 194px;
-        }
-      }
-      @media (max-width: 1199px) {
-        margin-top: 70px;
-      }
-  
-      .frame-bar {
-        background-color: $colorGrey;
-        height: 20px;
-        width: 692px;
-        border-radius: 6px 6px 0px 0px;
-      }
-  
-      .circles {
-        display: flex;
-        padding: 7px;
-      }
-  
-      .circle {
-        background-color: $colorYellow;
-        height: 8px;
-        width: 8px;
-        border-radius: 50%;
-        margin-left: 16px;
-  
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          height: 8px;
-          width: 8px;
-          border-radius: 50%;
-        }
-  
-        &::before {
-          background-color: $colorOrange;
-          left: 8px;
-        }
-  
-        &::after {
-          background-color: $colorGreen;
-          left: 38px;
-        }
-      }
-    }
-  
-    .sky {
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 49%;
-      border-bottom: 10px solid $colorPink;
-      @media (max-width: 1199px) {
-        max-width: 267px;
-        left: 34%;
-        top: 90px;
-      }
-      @media (max-width: 767px) {
-        display: none;
-      }
-  
-      &.borderOrange {
-        border-bottom: 10px solid $colorOrange;
-      }
-  
-      &.borderRed {
-        border-bottom: 10px solid $colorRed;
-      }
-  
-      &.borderGreen {
-        border-bottom: 10px solid $colorGreen;
-      }
-  
-      &.borderBlue {
-        border-bottom: 10px solid $colorBlue;
-      }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba($colorPink, 0);
     }
   }
 }
 
 .journey-container {
-  width: $container-max-width;
-  height: 550px;
-  display: flex;
   position: relative;
-  @media (max-width: 767px) {
+  display: flex;
+  height: 550px;
+}
+
+.journey-slider {
+  overflow: hidden;
+  width: 100%;
+
+  .swiper-slide {
+    display: grid;
+    top: 0;
+    grid-template-columns: max-content 1fr;
     width: 100%;
+    @include fluidValue(gap, 90, 85, 1680, 1200);
+    @include fluidValue(gap, 10, 30, 1199, 768);
+    opacity: 0 !important;
+    &.swiper-slide-active {
+      opacity: 1 !important;
+    }
+  }
+}
+.slide-info {
+  @include fluidValue(width, 415, 296, 1680, 768);
+  padding-top: 55px;
+}
+
+.slide-icon {
+  margin-bottom: 37px;
+  circle {
+    fill: $colorPink;
+  }
+
+  path {
+    fill: $colorWhite;
+  }
+
+  .slide-2 & {
+    circle {
+      fill: $colorYellow;
+    }
+  }
+
+  .slide-3 & {
+    circle {
+      fill: $colorRed;
+    }
+  }
+
+  .slide-4 & {
+    circle {
+      fill: $colorGreen;
+    }
+  }
+
+  .slide-5 & {
+    circle {
+      fill: $colorBlue;
+    }
   }
 }
 
-.slide1 {
-  left: 0;
+h3 {
+  font-style: italic;
+  font-family: $font-mercury;
+  font-weight: 400;
+  margin-bottom: 17px;
 }
 
-.slide2 {
-  left: 100%;
+h4 {
+  font-style: italic;
+  font-family: $font-ideal-sans;
+  font-weight: 400;
+  margin-bottom: 17px;
 }
 
-.slide3 {
-  left: 200%;
+span {
+  display: inline-block;
+  font-family: $font-ideal-sans;
+  font-weight: $font-weight-medium;
 }
 
-.slide4 {
-  left: 300%;
+p {
+  font-family: $font-family-base;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 35px;
+  margin-top: 0;
 }
 
-.slide5 {
-  left: 400%;
+a {
+  color: $colorWhite;
+  text-transform: uppercase;
+  font-family: $font-ideal-sans;
+  font-weight: $font-weight-semibold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  gap: 20px;
 }
+
 .slide-icon {
   margin-bottom: 37px;
 
@@ -236,7 +194,7 @@
 
   .slide2 & {
     circle {
-      fill: $colorOrange;
+      fill: $colorYellow;
     }
   }
 
@@ -259,128 +217,91 @@
   }
 }
 
-.swiper-pagination-bullet {
-  background-color: white;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: grid;
-  justify-content: center;
-}
+.slide-image {
+  position: relative;
+  @include fluidValue(width, 692, 540, 1680, 1200);
+  @include fluidValue(width, 370, 335, 1200, 768);
+  .sky {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    @include fluidValue(width, 540, 500, 1680, 1200);
+    @include fluidValue(height, 525, 490, 1680, 1200);
+    @include fluidValue(width, 240, 262, 1200, 768);
+    @include fluidValue(height, 290, 307, 1200, 768);
 
-.swiper-pagination-bullet-active {
-  background-color: $colorPink;
-  display: grid;
-  justify-content: center;
-  position: relative;
+    &.borderPink {
+      border-bottom: 7px solid $colorPink;
+    }
+  }
+  .sky {
+    &.borderYellow {
+      border-bottom: 10px solid $colorYellow;
+    }
+
+    &.borderRed {
+      border-bottom: 10px solid $colorRed;
+    }
+
+    &.borderGreen {
+      border-bottom: 10px solid $colorGreen;
+    }
+
+    &.borderBlue {
+      border-bottom: 10px solid $colorBlue;
+    }
+  }
 }
-/* Journey Pagination */
-.journey-pagination {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  @include fluidValue(gap, 194, 77, 1680, 768);
-  max-width: 1320px;
-  margin: 0 auto 60px;
+.frame {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 40px;
   z-index: 1;
-
-  @media (max-width: 1199px) {
-    gap: 0;
-    max-width: 768px;
-  }
-
-  @media (max-width: 767px) {
-    display: none;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
+  background-color: $colorGrey;
+  border-bottom: 8px solid $colorGrey;
+  border-radius: 6px;
+  @include fluidValue(width, 692, 540, 1680, 1200);
+  @include fluidValue(width, 450, 335, 1200, 768);
+  @include fluidValue(width, 290, 335, 1199, 768);
+  img {
+    background-color: $colorWhite;
+    height: 100%;
     width: 100%;
-    height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(132, 191, 65, 0.09),
-      rgba(252, 252, 252, 1)
-    );
-    border-image-slice: 1;
   }
 }
-
-.journey-bullet {
-  position: relative;
+.circles {
   display: grid;
-  justify-items: center;
-  padding-top: 15px;
-  color: $colorWhite;
-  font-weight: $font-weight-normal;
-  font-style: italic;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
+  @include fluidValue(width, 55, 28, 1680, 768);
+  @include fluidValue(height, 22, 9, 1680, 768);
+}
+.circle {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  @include fluidValue(width, 8, 4, 1680, 768);
+  @include fluidValue(height, 8, 4, 1680, 768);
+  background-color: $colorYellow;
+  border-radius: 50%;
 
-  &:focus {
-    outline: none;
-  }
-
-  @media (max-width: 767px) {
-    position: absolute;
-    top: -42px;
-    width: 100%;
-    grid-template-columns: max-content max-content;
-    justify-content: space-between;
-    visibility: hidden;
-  }
-
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: -5px;
-    width: 11px;
-    height: 11px;
     border-radius: 50%;
-    background-color: currentColor;
-    transition: background-color 0.5s ease-in;
-    z-index: 1;
-
-    @media (max-width: 767px) {
-      position: relative;
-      top: unset;
-    }
+    @include fluidValue(width, 8, 4, 1680, 768);
+    @include fluidValue(height, 8, 4, 1680, 768);
   }
-
-  &.is-active {
-    @media (max-width: 767px) {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    &::before {
-      background-color: $colorPink;
-      animation: pulsePaginationBulletAnimation 2s infinite;
-    }
+  &::before {
+    background-color: $colorRed;
+    @include fluidValue("right", 16, 8, 1680, 768);
   }
-}
-
-@keyframes pulsePaginationBulletAnimation {
-  0% {
-    box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
-  }
-
-  70% {
-    box-shadow: 0 0 0 10px rgba($colorPink, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba($colorPink, 0);
-  }
-}
-
-@keyframes slide-up {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
+  &::after {
+    background-color: $colorGreen;
+    @include fluidValue("left", 16, 8, 1680, 768);
   }
 }
