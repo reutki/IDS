@@ -1,23 +1,26 @@
 .section-space {
   position: relative;
-  margin-top: 120px;
-  margin-bottom: 100px;
+  margin: 120px 0 100px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    height: 100%;
     left: 0;
-    right: 50%;
+    width: 50%;
+    height: 100%;
     background-color: $colorGrey;
     z-index: -1;
   }
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+    
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      grid-template-columns: 1fr 1fr;
+      @include fluidValue(column-gap, 190, 90, 1680, 768);
+    }
   }
 
   .space-content {
@@ -64,221 +67,156 @@
     }
   }
 
-  .space-slider {
-    padding: 100px 0 100px 0;
-    position: relative;
-    align-self: center;
-    justify-self: center;
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: calc(50%);
-      width: 100%;
-      top: 0;
-      height: 100%;
-      background-color: $colorGrey;
-      z-index: -1;
-    }
-
-    .circle-outside {
-      justify-self: center;
-      border: solid 2px $colorPink;
-      background: transparent;
-      border-radius: 50%;
-      width: 480px;
-      height: 480px;
-      animation: rotate 25s infinite linear;
-
-      @media (max-width: 1199px) {
-        border: solid 1px $colorPink;
-        max-width: 280px;
-        max-height: 280px;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 160px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: solid 5px $colorPink;
-        background-color: $colorWhite;
-        animation: color 25s infinite;
-
-        @keyframes color {
-          10% {
-            transform: rotate(0deg);
-            border: solid 5px $colorPink;
-          }
-
-          16% {
-            transform: rotate(60deg);
-            border: solid 5px orange;
-          }
-          24% {
-            transform: rotate(90deg);
-            border: solid 5px green;
-          }
-
-          40% {
-            transform: rotate(150deg);
-            border: solid 5px orange;
-          }
-
-          56% {
-            transform: rotate(210deg);
-            border: solid 5px blue;
-          }
-          64% {
-            transform: rotate(0deg);
-            border: solid 5px yellow;
-          }
-
-          80% {
-            transform: rotate(0deg);
-            border: solid 5px orange;
-          }
-          100% {
-            transform: rotate(0deg);
-            border: solid 5px red;
-          }
-          90% {
-            transform: rotate(0deg);
-            border: solid 5px blue;
-          }
-        }
-
-        @media (max-width: 1199px) {
-          top: 95px;
-          width: 11px;
-          height: 11px;
-          border: solid 2px $colorPink;
-        }
-      }
-    }
-
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-        border: solid 1.8px $colorPink;
-      }
-      8% {
-        transform: rotate(30deg);
-        border: solid 1.8px red;
-      }
-      16% {
-        transform: rotate(60deg);
-        border: solid 1.8px orange;
-      }
-      24% {
-        transform: rotate(90deg);
-        border: solid 1.8px green;
-      }
-      32% {
-        transform: rotate(120deg);
-        border: solid 1.8px red;
-      }
-      40% {
-        transform: rotate(150deg);
-        border: solid 1.8px orange;
-      }
-      48% {
-        transform: rotate(180deg);
-        border: solid 1.8px yellowgreen;
-      }
-      56% {
-        transform: rotate(210deg);
-        border: solid 1.8px blue;
-      }
-      64% {
-        transform: rotate(240deg);
-        border: solid 1.8px yellow;
-      }
-      72% {
-        transform: rotate(270deg);
-        border: solid 1.8px blue;
-      }
-      80% {
-        transform: rotate(300deg);
-        border: solid 1.8px orange;
-      }
-      95% {
-        transform: rotate(330deg);
-        border: solid 1.8px red;
-      }
-      100% {
-        transform: rotate(360deg);
-        border: solid 1.8px blue;
-      }
-    }
+  .swiper-slide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $colorPink;
+    border-radius: 50%;
+    background-color: $colorWhite;
   }
 }
 
 .space-wrapper {
+  position: relative;
   display: grid;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: $colorWhite;
-  border: solid 1px $colorPink;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
-  animation: colorcircle 25s step-end infinite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $colorGrey;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+}
 
-  @keyframes colorcircle {
-    100% {
-      border: solid 0.67px $colorPink;
-    }
-    8% {
-      border: solid 0.67px red;
-    }
-    16% {
-      border: solid 0.67px orange;
-    }
-    24% {
-      border: solid 0.67px green;
-    }
-    32% {
-      border: solid 0.67px red;
-    }
-    40% {
-      border: solid 0.67px orange;
-    }
-    48% {
-      border: solid 0.67px yellowgreen;
-    }
-    56% {
-      border: solid 0.67px blue;
-    }
-    64% {
-      border: solid 0.67px yellow;
-    }
-    72% {
-      border: solid 0.67px blue;
-    }
-    80% {
-      border: solid 0.67px orange;
-    }
-    95% {
-      border: solid 0.67px red;
-    }
-    100% {
-      border: solid 0.67px blue;
+.space-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fluidValue(width, 480, 280, 1680, 768);
+  @include fluidValue(height, 480, 280, 1680, 768);
+}
+
+.big-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: $colorPink;
+  border: 1px solid currentColor;
+  animation: rotateAnimation 16s linear infinite;
+  z-index: -1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 33%;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $colorWhite;
+    border-radius: 50%;
+    border: 5px solid currentColor;
+
+    @media (max-width: 1199px) {
+      width: 12px;
+      height: 12px;
+      border-width: 3px;
     }
   }
-  .space-icon {
-    width: 80px;
-    height: 80px;
-    fill: $colorWhite;
-    circle {
-      fill: $colorPink;
+
+  &-1 {
+    color: $colorBlack;
+  }
+
+  &-2 {
+    color: $colorDarkBlue;
+  }
+
+  &-3 {
+    color: $colorBlue;
+  }
+
+  &-4 {
+    color: $colorBlue-100;
+  }
+
+  &-5 {
+    color: $colorSky;
+  }
+
+  &-6 {
+    color: $colorGrey;
+  }
+
+  &-7 {
+    color: $colorOrange;
+  }
+
+  &-8 {
+    color: $colorGreen;
+  }
+
+  &-9 {
+    color: $colorLightBlue;
+  }
+
+  &-10 {
+    color: $colorYellow;
+  }
+
+  &-11 {
+    color: $colorRed;
+  }
+}
+
+.circle-slider {
+  display: grid;
+  width: 100% !important;
+  height: 100% !important;
+  @include fluidValue(padding, 100, 60, 1199, 768);
+
+  .swiper-wrapper {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .swiper-slide {
+    transform: translate3d(0, 0, 0) !important;
+
+    &:not(.swiper-slide-active) {
+      visibility: hidden;
+      opacity: 0 !important;
+      pointer-events: none;
+      transition: opacity 0.5s linear !important;
+      height: 0;
+    }
+
+    &-active {
+      height: 100%;
+      visibility: visible;
+      opacity: 1 !important;
+      pointer-events: auto;
     }
   }
 }
-.space-pagination {
-  display: flex;
-  justify-content: center;
+
+@keyframes rotateAnimation {
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
