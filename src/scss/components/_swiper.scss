@@ -28,14 +28,14 @@
   position: relative;
   display: grid;
   justify-items: center;
-  padding-top: 15px;
+  @include fluidValue(padding-top, 15, 25, 1680, 768);
+  @include fluidValue(font-size, 18, 16, 1680, 768);
   color: $colorWhite;
   font-weight: $font-weight-normal;
   font-style: italic;
   background-color: transparent;
   border: 0;
   cursor: pointer;
-
   &:focus {
     outline: none;
   }
