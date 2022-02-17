@@ -1,47 +1,93 @@
-.footer-content {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 125px;
-  padding: 120px 105px 120px 105px;
-  color: $colorWhite;
-}
 .footer {
   background-color: $colorDarkBlue;
-  p {
-    margin-top: 40px;
+
+  .container {
+    display: grid;
+    color: $colorWhite;
+    padding: 50px 0;
+
+    @media (min-width: 768px) {
+      padding: 70px 0;
+    }
+    @media (min-width: 1199px) {
+      grid-template-columns: max-content max-content;
+      grid-column-gap: 125px;
+      padding: 120px 0;
+    }
   }
-  button {
-    margin-top: 80px;
+}
+
+.footer-left-text {
+  @media (max-width: 1199px) {
+    margin-bottom: 55px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 65px;
+  }
+
+  h4 {
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    width: 100%;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 55px;
+    }
+    @media (min-width: 1199px) {
+      margin-bottom: 80px;
+      max-width: 635px;
+    }
+  }
+
+  a {
     border: none;
     background-color: transparent;
     color: $colorWhite;
     text-transform: uppercase;
-    a {
-      display: flex;
-      gap: 22px;
-      text-decoration: none;
-      color: $colorWhite;
-    }
+    letter-spacing: 2px;
   }
+}
 
-  .footer-right-text {
+.footer-right-text {
+  @media (min-width: 1199px) {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
     max-width: 350px;
-    a {
-      color: $colorWhite;
-    }
-    .copyright {
-      margin-top: 105px;
-      a {
-        text-decoration: underline;
-      }
+  }
+  h4 {
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      margin-bottom: 35px;
     }
   }
-  .footer-left-text {
-    display: grid;
-    max-width: 635px;
 
-    grid-template-rows: max-content 1fr max-content;
+  a {
+    color: $colorWhite;
+  }
+
+  .copyright {
+    margin-top: 105px;
+    @media (max-width: 768px) {
+      margin-top: 65px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+  p {
+    @media (max-width: 1199px) {
+      margin-bottom: 50px;
+    }
+  }
+  span {
+    @media (max-width: 1199px) {
+      display: none;
+    }
   }
 }
