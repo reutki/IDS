@@ -1,28 +1,88 @@
-.theIDS {
-  margin-bottom: 80px;
-  min-height: 760px;
-}
+.section-ids {
+  @include fluidValue(padding-bottom, 80, 40, 1680, 768);
 
-.theIDS-text {
-  background-color: $colorOrange;
-  padding: 100px;
-  max-width: 740px;
-  color: $colorWhite;
-  position: absolute;
-  top: 140px;
-  left: 0;
-
-  z-index: 1;
-  p {
-    margin-top: 20px;
+  .container {
+    position: relative;
+    @media (max-width: 767px) {
+      display: contents;
+    }
   }
 }
-.theIDS-container {
-  position: relative;
+
+.ids-image {
+  @media (min-width: 768px) {
+    overflow: hidden;
+    justify-self: flex-end;
+    min-width: 542px;
+    justify-self: flex-end;
+    min-height: 553px;
+  }
+
+  @media (min-width: 1199px) {
+    max-width: 894px;
+  }
+
+  &::before {
+    content: "";
+    width: translateX(50%);
+    background-color: $colorGrey;
+    height: 767px;
+  }
+
+  img {
+    @media (min-width: 768px) {
+      object-fit: cover;
+      object-position: right;
+    }
+    object-fit: cover;
+    object-position: end;
+    max-width: 100%;
+  }
+  &.mobile {
+    width: 100%;
+  }
 }
-.theIDS-image {
-  position: absolute;
-  top: 0;
-  right: 40px;
-  z-index: 0;
+
+.ids-info {
+  background-color: $colorOrange;
+  color: $colorWhite;
+  font-family: $font-ideal-sans;
+  font-style: italic;
+  padding: 50px 12px;
+
+  @media (min-width: 767px) {
+    top: 70px;
+    padding: 60px;
+    position: absolute;
+    justify-self: flex-start;
+    z-index: 1;
+  }
+
+  @media (min-width: 1199px) {
+    top: 139px;
+    font-style: normal;
+    font-family: $font-family-base;
+    padding: 100px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+
+  p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: 768px) {
+      max-width: 336px;
+    }
+
+    @media (min-width: 1199px) {
+      max-width: 540px;
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
 }

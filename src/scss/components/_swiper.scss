@@ -98,6 +98,45 @@
 .slide-info {
   @include fluidValue(width, 415, 296, 1680, 768);
   padding-top: 55px;
+  h3 {
+    font-style: italic;
+    font-family: $font-mercury;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+
+  h4 {
+    font-style: italic;
+    font-family: $font-ideal-sans;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+
+  span {
+    display: inline-block;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-medium;
+  }
+
+  p {
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+
+  a {
+    color: $colorWhite;
+    text-transform: uppercase;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    gap: 20px;
+  }
 }
 
 .slide-icon {
@@ -133,46 +172,6 @@
       fill: $colorBlue;
     }
   }
-}
-
-h3 {
-  font-style: italic;
-  font-family: $font-mercury;
-  font-weight: 400;
-  margin-bottom: 17px;
-}
-
-h4 {
-  font-style: italic;
-  font-family: $font-ideal-sans;
-  font-weight: 400;
-  margin-bottom: 17px;
-}
-
-span {
-  display: inline-block;
-  font-family: $font-ideal-sans;
-  font-weight: $font-weight-medium;
-}
-
-p {
-  font-family: $font-family-base;
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 35px;
-  margin-top: 0;
-}
-
-a {
-  color: $colorWhite;
-  text-transform: uppercase;
-  font-family: $font-ideal-sans;
-  font-weight: $font-weight-semibold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  gap: 20px;
 }
 
 .slide-icon {

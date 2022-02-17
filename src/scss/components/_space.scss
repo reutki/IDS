@@ -15,7 +15,7 @@
 
   .container {
     display: grid;
-    
+
     @media (min-width: 768px) {
       justify-content: space-between;
       grid-template-columns: 1fr 1fr;
