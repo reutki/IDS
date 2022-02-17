@@ -1,13 +1,29 @@
-.podcasts {
-  margin-top: 80px;
+.section-podcasts {
   margin-bottom: 80px;
-}
-.podcasts-content {
-  display: flex;
-  justify-content: center;
-  gap: 281px;
-
-  h5 {
-    max-width: 640px;
+  .container {
+    display: grid;
+    grid-template-columns: unset;
+    @media (min-width: 768px) {
+      gap: 110px;
+      grid-template-columns: max-content max-content;
+    }
+    @media (min-width: 1199px) {
+      gap: 281px;
+    }
+    h5 {
+      width: 100%;
+      margin-bottom: 40px;
+      @media (min-width: 768px) {
+        max-width: 400px;
+      }
+      @media (min-width: 1199px) {
+        max-width: 640px;
+      }
+    }
+  }
+  .btn {
+    height: max-content;
+    width: max-content;
+    @include fluidValue(margin-right, 113, 0, 1680, 768);
   }
 }
