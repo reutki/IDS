@@ -232,23 +232,28 @@
 
     &.borderPink {
       border-bottom: 7px solid $colorPink;
+      width: max-content;
     }
   }
   .sky {
     &.borderYellow {
       border-bottom: 10px solid $colorYellow;
+      width: max-content;
     }
 
     &.borderRed {
       border-bottom: 10px solid $colorRed;
+      width: max-content;
     }
 
     &.borderGreen {
       border-bottom: 10px solid $colorGreen;
+      width: max-content;
     }
 
     &.borderBlue {
       border-bottom: 10px solid $colorBlue;
+      width: max-content;
     }
   }
 }

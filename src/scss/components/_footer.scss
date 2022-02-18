@@ -60,9 +60,12 @@
     max-width: 350px;
   }
   h4 {
-    margin-bottom: 40px;
-    @media (max-width: 768px) {
-      margin-bottom: 35px;
+    margin-bottom: 35px;
+    @media (min-width: 768px) {
+      margin-bottom: 45px;
+    }
+    @media (min-width: 1199px) {
+      margin-bottom: 40px;
     }
   }
 
@@ -71,21 +74,21 @@
   }
 
   .copyright {
-    margin-top: 105px;
-    @media (max-width: 768px) {
-      margin-top: 65px;
-    }
-
-    a {
-      text-decoration: underline;
-    }
   }
   p {
-    @media (max-width: 1199px) {
+    @media (min-width: 768px) {
+      margin-bottom: 45px;
+      max-width: 100%;
+    }
+    @media (min-width: 1199px) {
       margin-bottom: 50px;
+      max-width: 350px;
     }
   }
   span {
+    a {
+      text-decoration: underline;
+    }
     @media (max-width: 1199px) {
       display: none;
     }

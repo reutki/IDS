@@ -71,7 +71,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    border: 1px solid $colorPink;
+    border: 1px solid currentColor;
     border-radius: 50%;
     background-color: $colorWhite;
   }
@@ -139,47 +139,47 @@
   }
 
   &-1 {
-    color: $colorBlack;
-  }
-
-  &-2 {
-    color: $colorDarkBlue;
-  }
-
-  &-3 {
-    color: $colorBlue;
-  }
-
-  &-4 {
-    color: $colorBlue-100;
-  }
-
-  &-5 {
-    color: $colorSky;
-  }
-
-  &-6 {
-    color: $colorGrey;
-  }
-
-  &-7 {
     color: $colorOrange;
   }
 
-  &-8 {
+  &-2 {
+    color: $colorBlue;
+  }
+
+  &-3 {
     color: $colorGreen;
   }
 
-  &-9 {
-    color: $colorLightBlue;
+  &-4 {
+    color: $colorBlack;
   }
 
-  &-10 {
+  &-5 {
+    color: $colorRed;
+  }
+
+  &-6 {
+    color: $colorDarkBlue;
+  }
+
+  &-7 {
     color: $colorYellow;
   }
 
+  &-8 {
+    color: $colorBlue;
+  }
+
+  &-9 {
+    color: $colorGreen;
+  }
+
+  &-10 {
+    color: $colorMint;
+  }
+
   &-11 {
-    color: $colorRed;
+    color: $colorDarkBlue;
   }
 }
 
@@ -188,15 +188,62 @@
   width: 100% !important;
   height: 100% !important;
   @include fluidValue(padding, 100, 60, 1199, 768);
-
+  overflow: hidden;
   .swiper-wrapper {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    transform: translate3d(0, 0, 0) !important;
+
+    color: $colorPink;
+    &.slide-1 {
+      color: $colorOrange;
+    }
+
+    &.slide-2 {
+      color: $colorBlue;
+    }
+
+    &.slide-3 {
+      color: $colorGreen;
+    }
+
+    &.slide-4 {
+      color: $colorBlack;
+    }
+
+    &.slide-5 {
+      color: $colorRed;
+    }
+
+    &.slide-6 {
+      color: $colorDarkBlue;
+    }
+
+    &.slide-7 {
+      color: $colorYellow;
+    }
+
+    &.slide-8 {
+      color: $colorBlue;
+    }
+
+    &.slide-9 {
+      color: $colorGreen;
+    }
+
+    &.slide-10 {
+      color: $colorMint;
+    }
+
+    &.slide-11 {
+      color: $colorDarkBlue;
+    }
   }
 
   .swiper-slide {
-    transform: translate3d(0, 0, 0) !important;
+    transition-duration: 0ms !important;
 
     &:not(.swiper-slide-active) {
       visibility: hidden;

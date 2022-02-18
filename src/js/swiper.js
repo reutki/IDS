@@ -1,4 +1,4 @@
-import Swiper, {Autoplay, Navigation, Pagination, EffectFade } from "swiper";
+import Swiper, { Autoplay, Navigation, Pagination, EffectFade } from "swiper";
 
 let Years = ["1996-2004", "2005-2009", "2010-2014", "2015-2021", "2021-2030"];
 
@@ -23,7 +23,7 @@ const swiper = new Swiper(".journey-slider", {
   },
 });
 
-const circleSlider = new Swiper('.circle-slider', {
+const circleSlider = new Swiper(".circle-slider", {
   modules: [Autoplay, EffectFade],
   autoplay: {
     delay: 1500,
@@ -31,16 +31,19 @@ const circleSlider = new Swiper('.circle-slider', {
     disableOnInteraction: true,
     virtualTranslate: true,
   },
-  effect: 'fade',
+  effect: "fade",
   fadeEffect: { crossFade: true },
   allowTouchMove: false,
   on: {
     slideChange: function () {
       const index_currentSlide = circleSlider.realIndex;
-      const bigCircle = document.querySelector('.big-circle');
+      const bigCircle = document.querySelector(".big-circle");
+      const slide = document.querySelector(".swiper-wrapper");
       let removeIndex = index_currentSlide === 0 ? 11 : index_currentSlide - 1;
-      bigCircle.classList.add('big-circle-' + index_currentSlide);
-      bigCircle.classList.remove('big-circle-' + removeIndex);
+      bigCircle.classList.add("big-circle-" + index_currentSlide);
+      bigCircle.classList.remove("big-circle-" + removeIndex);
+      slide.classList.add("slide-" + index_currentSlide);
+      slide.classList.remove("slide-" + removeIndex);
     },
   },
 });
