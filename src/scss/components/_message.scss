@@ -18,10 +18,12 @@
       content: "";
       top: 0;
       left: 0;
-      height: calc(100% - 657px);
+      @include fluidValue(height, 1016, 391, 767, 320);
       background-color: $colorBlue;
-      @include fluidValue("max-height", 1040, 414, 767, 320);
 
+      @media (min-width: 768px) {
+        height: calc(100% - 657px);
+      }
       @media (min-width: 1199px) {
         height: calc(100% - 264px);
       }
