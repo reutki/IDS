@@ -212,7 +212,9 @@
   width: 100% !important;
   height: 100% !important;
   @include fluidValue(padding, 100, 60, 1199, 768);
-  overflow: hidden;
+  @media (min-width: 768px) {
+    overflow: hidden;
+  }
   .swiper-wrapper {
     display: flex;
     margin: 0;

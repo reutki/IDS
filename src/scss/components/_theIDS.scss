@@ -1,5 +1,24 @@
 .section-ids {
   @include fluidValue(padding-bottom, 80, 40, 1680, 768);
+  position: relative;
+  &::before {
+    content: "";
+    transform: translateX(-50%);
+    width: 100%;
+    @include fluidValue(height, 576, 492, 1680, 768);
+    z-index: -1;
+    background-color: $colorGrey;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    @media (max-width: 1199px) {
+      top: 30px;
+    }
+    @media (max-width: 768px) {
+      top: -20px;
+      height: 100%;
+    }
+  }
 
   .container {
     position: relative;
@@ -20,13 +39,6 @@
 
   @media (min-width: 1199px) {
     max-width: 894px;
-  }
-
-  &::before {
-    content: "";
-    width: translateX(50%);
-    background-color: $colorGrey;
-    height: 767px;
   }
 
   img {
