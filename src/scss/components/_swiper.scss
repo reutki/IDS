@@ -241,26 +241,26 @@
   .sky {
     &.borderPink {
       border-bottom: 7px solid $colorPink;
-      width: max-content;
+      max-width: 540px;
     }
     &.borderYellow {
-      border-bottom: 10px solid $colorYellow;
-      width: max-content;
+      border-bottom: 7px solid $colorYellow;
+      max-width: 540px;
     }
 
     &.borderRed {
-      border-bottom: 10px solid $colorRed;
-      width: max-content;
+      border-bottom: 7px solid $colorRed;
+      max-width: 540px;
     }
 
     &.borderGreen {
-      border-bottom: 10px solid $colorGreen;
-      width: max-content;
+      border-bottom: 7px solid $colorGreen;
+      max-width: 540px;
     }
 
     &.borderBlue {
-      border-bottom: 10px solid $colorBlue;
-      width: max-content;
+      border-bottom: 7px solid $colorBlue;
+      max-width: 540px;
     }
   }
 }
