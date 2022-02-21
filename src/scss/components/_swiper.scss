@@ -217,25 +217,32 @@
 
 .slide-image {
   position: relative;
-  @include fluidValue(width, 692, 540, 1680, 1200);
-  @include fluidValue(width, 370, 335, 1200, 768);
+  height: 100%;
+  max-width: 691px;
+  @media (max-width: 1199px) {
+    max-width: 335px;
+    display: grid;
+    align-items: center;
+  }
+
   .sky {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    @include fluidValue(width, 540, 500, 1680, 1200);
-    @include fluidValue(height, 525, 490, 1680, 1200);
-    @include fluidValue(width, 240, 262, 1200, 768);
-    @include fluidValue(height, 290, 307, 1200, 768);
-
+    max-height: 525px;
+    max-width: 540px;
+    @media (max-width: 1199px) {
+      max-height: 307px;
+      max-width: 262px;
+    }
+  }
+  .sky {
     &.borderPink {
       border-bottom: 7px solid $colorPink;
       width: max-content;
     }
-  }
-  .sky {
     &.borderYellow {
       border-bottom: 10px solid $colorYellow;
       width: max-content;
@@ -268,9 +275,11 @@
   background-color: $colorGrey;
   border-bottom: 8px solid $colorGrey;
   border-radius: 6px;
-  @include fluidValue(width, 692, 540, 1680, 1200);
-  @include fluidValue(width, 450, 335, 1200, 768);
-  @include fluidValue(width, 290, 335, 1199, 768);
+  height: max-content;
+  @media (max-width: 1199px) {
+    top: unset;
+    border-bottom: 2px solid $colorGrey;
+  }
   img {
     background-color: $colorWhite;
     height: 100%;
