@@ -125,7 +125,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   @include fluidValue(width, 480, 280, 1680, 768);
   @include fluidValue(height, 480, 280, 1680, 768);
 }
@@ -286,6 +286,20 @@
       pointer-events: auto;
     }
   }
+}
+.pagination {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-counter {
+  color: black;
+  display: flex;
+  justify-self: center;
 }
 
 @keyframes rotateAnimation {

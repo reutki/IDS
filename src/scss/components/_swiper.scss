@@ -98,6 +98,7 @@
 .slide-info {
   @include fluidValue(width, 415, 296, 1680, 768);
   padding-top: 55px;
+
   h3 {
     font-style: italic;
     font-family: $font-mercury;
@@ -315,5 +316,52 @@
   &::after {
     background-color: $colorGreen;
     @include fluidValue("left", 16, 8, 1680, 768);
+  }
+}
+.swiper-slide-active {
+  .slide-info {
+    animation: slide-up 0.5s ease-in;
+    a {
+      &:hover {
+        img {
+          animation: to-right 0.5s ease-in;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0, 0, 0);
+  }
+  100% {
+    transform: translateY(100, 0, 0);
+  }
+}
+
+@keyframes zoomAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes to-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
   }
 }
