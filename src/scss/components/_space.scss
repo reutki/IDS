@@ -85,10 +85,14 @@
   .swiper-slide {
     display: grid;
     justify-content: center;
-    align-items: center;
     border: 1px solid currentColor;
     border-radius: 50%;
     background-color: $colorWhite;
+    align-items: center;
+    img {
+      margin-bottom: -80px;
+      padding: 0;
+    }
   }
 }
 
