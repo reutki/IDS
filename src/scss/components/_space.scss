@@ -1,7 +1,9 @@
 .section-space {
   position: relative;
   margin: 120px 0 100px;
-
+  @media (max-width: 767px) {
+    margin: 35px 0 50px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -26,7 +28,7 @@
     @media (min-width: 768px) {
       justify-content: space-between;
       grid-template-columns: 1fr 1fr;
-      @include fluidValue(column-gap, 190, 90, 1680, 768);
+      @include fluidValue(column-gap, 190, 77, 1680, 768);
     }
   }
 
@@ -90,8 +92,11 @@
     background-color: $colorWhite;
     align-items: center;
     img {
-      margin-bottom: -80px;
-      padding: 0;
+      @media (max-width: 1199px) {
+        width: 60px;
+        justify-self: center;
+        align-self: center;
+      }
     }
   }
 }
@@ -101,6 +106,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
+
   @media (max-width: 767px) {
     grid-row: 1;
   }
@@ -129,9 +135,9 @@
   position: relative;
   display: flex;
   justify-content: center;
-  // align-items: center;
-  @include fluidValue(width, 480, 280, 1680, 768);
-  @include fluidValue(height, 480, 280, 1680, 768);
+  align-items: center;
+  @include fluidValue(width, 480, 270, 1680, 768);
+  @include fluidValue(height, 480, 270, 1680, 768);
 }
 
 .big-circle {

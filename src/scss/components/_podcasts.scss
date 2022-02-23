@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: unset;
     @media (min-width: 768px) {
-      gap: 110px;
       grid-template-columns: max-content max-content;
+      justify-content: space-between;
     }
     @media (min-width: 1199px) {
       gap: 281px;

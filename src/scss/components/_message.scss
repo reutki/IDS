@@ -15,10 +15,12 @@
     }
 
     &::before {
+      transform: translateX(-70%);
+      width: 100%;
       content: "";
       top: 0;
       left: 0;
-      @include fluidValue(height, 1016, 391, 767, 320);
+      @include fluidValue(height, 1040, 415, 767, 320);
       background-color: $colorBlue;
 
       @media (min-width: 768px) {
