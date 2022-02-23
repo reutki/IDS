@@ -1,8 +1,10 @@
 .section-journey {
   background-color: $colorSky;
   padding: 120px 0;
+  margin-bottom: 120px;
   @media (max-width: 767px) {
-    padding: 50px 0;
+    padding: 50px 0 0;
+    margin-bottom: 50px;
   }
   color: $colorWhite;
   .container {
@@ -19,6 +21,7 @@
   @include fluidValue("gap", 64, 20, 1199, 768);
   @media (max-width: 767px) {
     grid-template-columns: unset;
+    margin-bottom: 50px;
   }
   h3 {
     max-width: 343px;
@@ -50,5 +53,9 @@
   p {
     font-family: $font-family-base;
     font-weight: normal;
+    @media (max-width: 767px) {
+      font-family: $font-ideal-sans;
+      font-weight: normal;
+    }
   }
 }

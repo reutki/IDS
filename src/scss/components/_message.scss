@@ -1,5 +1,8 @@
 .section-message {
   margin-bottom: 100px;
+  @media (max-width: 769px) {
+    margin-bottom: 50px;
+  }
   position: relative;
 
   .container {
@@ -20,7 +23,7 @@
       content: "";
       top: 0;
       left: 0;
-      @include fluidValue(height, 1040, 415, 767, 320);
+      @include fluidValue(height, 1042, 416, 767, 320);
       background-color: $colorBlue;
 
       @media (min-width: 768px) {
@@ -90,7 +93,7 @@
 }
 
 .message-description {
-  padding: 70px 60px;
+  padding: 50px 20px;
   font-family: $font-family-base;
   background-color: $colorLightBlue;
 

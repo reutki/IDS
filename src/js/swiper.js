@@ -6,7 +6,7 @@ const swiper = new Swiper(".journey-slider", {
   modules: [Pagination, Navigation, EffectFade],
   wrapperClass: "journey-container",
   effect: "fade",
-  speed: 1000,
+  speed: 250,
   fadeEffect: {
     crossFade: true,
   },

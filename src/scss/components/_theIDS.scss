@@ -1,23 +1,26 @@
 .section-ids {
-  @include fluidValue(padding-bottom, 80, 40, 1680, 768);
+  @include fluidValue(padding-bottom, 80, 30, 1680, 768);
   position: relative;
+  margin-bottom: 80px;
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
   &::before {
     content: "";
     transform: translateX(-50%);
     width: 100%;
-    @include fluidValue(height, 576, 492, 1680, 768);
+    @include fluidValue(height, 580, 492, 1680, 768);
     z-index: -1;
     background-color: $colorGrey;
     position: absolute;
     left: 0;
-    top: 100px;
-    @media (max-width: 1199px) {
-      top: 30px;
-    }
+
     @media (max-width: 768px) {
       top: -20px;
       height: 100%;
     }
+    @include fluidValue(top, 100, 120, 1680, 1200);
+    @include fluidValue(top, 30, 30, 1199, 768);
   }
 
   .container {
@@ -76,7 +79,6 @@
     font-style: normal;
     font-family: $font-family-base;
     padding: 100px;
-    left: -100px;
   }
 
   h2 {

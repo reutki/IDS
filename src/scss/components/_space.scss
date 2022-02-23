@@ -1,8 +1,8 @@
 .section-space {
   position: relative;
-  margin: 120px 0 100px;
+  margin: 0px 0 100px;
   @media (max-width: 767px) {
-    margin: 35px 0 50px;
+    margin: 0px 0 50px;
   }
   &::before {
     content: "";
@@ -124,7 +124,7 @@
     z-index: -1;
     transform: translateX(-50%);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       transform: translateY(50%);
       left: -15px;
       width: 100vw;
@@ -133,12 +133,15 @@
 }
 
 .space-box {
+  @media (max-width: 767px) {
+    margin-top: 6px;
+  }
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  @include fluidValue(width, 480, 270, 1680, 768);
-  @include fluidValue(height, 480, 270, 1680, 768);
+  @include fluidValue(width, 480, 276, 1680, 768);
+  @include fluidValue(height, 480, 276, 1680, 768);
 }
 
 .big-circle {

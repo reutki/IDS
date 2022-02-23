@@ -91,14 +91,12 @@
     @include fluidValue(gap, 10, 30, 1199, 768);
     opacity: 0 !important;
     &.swiper-slide-active {
-      opacity: 1 !important;
+      opacity: 1 !important ;
     }
   }
 }
 .slide-info {
   @include fluidValue(width, 415, 296, 1680, 768);
-  padding-top: 55px;
-
   h3 {
     font-style: italic;
     font-family: $font-mercury;
@@ -320,7 +318,8 @@
 }
 .swiper-slide-active {
   .slide-info {
-    animation: slide-up 0.5s ease-in;
+    animation: slide-up 0.5s linear;
+
     a {
       &:hover {
         img {
@@ -363,5 +362,13 @@
   }
   to {
     transform: translateX(10px);
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
