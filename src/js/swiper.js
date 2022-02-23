@@ -57,7 +57,7 @@ const circleSlider = new Swiper(".circle-slider", {
     type: "fraction",
     renderFraction: function (currentClass, totalClass) {
       return `
-      <span class="space-number">Space <span class="${currentClass}">${currentClass}</span>  </span>
+      <div class="space-number">Space <span class="${currentClass}"></span>  </div>
       <div class="pagination-counter"><span class="${currentClass}">${currentClass}</span>/<span class="${totalClass}"> ${totalClass}</span></div>`;
     },
   },

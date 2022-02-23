@@ -92,6 +92,7 @@
     background-color: $colorWhite;
     align-items: center;
     img {
+      margin-bottom: 17px;
       @media (max-width: 1199px) {
         width: 60px;
         justify-self: center;
@@ -294,6 +295,7 @@
       visibility: visible;
       opacity: 1 !important;
       pointer-events: auto;
+      align-content: center;
     }
   }
 }
