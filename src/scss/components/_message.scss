@@ -24,10 +24,11 @@
       top: 0;
       left: 0;
       @include fluidValue(height, 1042, 416, 767, 320);
+
       background-color: $colorBlue;
 
       @media (min-width: 768px) {
-        height: calc(100% - 657px);
+        height: calc(100% - 421px);
       }
       @media (min-width: 1199px) {
         height: calc(100% - 264px);

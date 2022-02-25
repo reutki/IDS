@@ -15,12 +15,12 @@
     position: absolute;
     left: 0;
 
+    @include fluidValue(top, 100, 120, 1680, 1200);
+    @include fluidValue(top, 30, 30, 1199, 768);
     @media (max-width: 768px) {
       top: -20px;
       height: 100%;
     }
-    @include fluidValue(top, 100, 120, 1680, 1200);
-    @include fluidValue(top, 30, 30, 1199, 768);
   }
 
   .container {

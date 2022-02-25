@@ -72,15 +72,14 @@
     a {
       color: $colorPink;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 500;
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-weight: normal;
     }
 
-    img {
-      padding-left: 22px;
+    svg {
+      margin-left: 22px;
     }
   }
 

@@ -321,6 +321,7 @@
     animation: slide-up 0.5s linear;
 
     a {
+      align-items: center;
       &:hover {
         img {
           animation: to-right 0.5s ease-in;

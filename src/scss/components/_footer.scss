@@ -50,6 +50,11 @@
     color: $colorWhite;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: normal;
+    align-items: center;
+    svg {
+      margin-left: 20px;
+    }
   }
 }
 
