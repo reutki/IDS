@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="Home Page" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="description" content="Home Page Description" />
+    <meta name="keywords" content="Home Page Keywords" />
+    <title>Knowledge Management Journey</title>
+    <link rel="stylesheet" href="../../css/app.scss" />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="header-container">
+        <a href="/" class="header-logo">
+          <img
+            srcset="
+              img/logo-small.png   767w,
+              img/logo-medium.png 1199w,
+              img/logo.svg
+            "
+            sizes="(max-width:767px) 320px, (max-width:1199px) 768px,1200px "
+            src="img/logo.svg"
+            alt="IDS logo"
+          />
+        </a>
+        <!-- .header-log -->
+        <button
+          class="burger-btn"
+          type="button"
+          title="Burger button"
+          aria-labelledby="Open menu"
+        >
+          <svg class="icon-burger" version="1.1" viewBox="0 0 100 100">
+            <path class="line line1" d="M 30,65 H 70" />
+            <path
+              class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+            />
+            <path
+              class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+            />
+          </svg>
+          <!-- .icon-burger -->
+          <svg
+            class="icon-cross"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+          <!-- .icon-cross -->
+        </button>
+        <!-- .burger-btn -->
+        <div class="mobile-box">
+          <nav class="header-nav">
+            <a class="active" href="./index.html">About us</a>
+            <a href="./knowledge.html">Knowledge Management Journey</a>
+            <a href="#">Knowledge Solutions</a>
+          </nav>
+          <!-- .header-nav -->
+          <a
+            class="btn primary"
+            href="pdf/Manual.pdf"
+            title="Link download pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-labelledby="Download Manual pdf file"
+            download="Manual.pdf"
+          >
+            <span>DOWNLOAD PDF</span>
+            <span>DOWNLOAD Full Publication PDF</span>
+          </a>
+        </div>
+        <!-- .mobile-box -->
+      </div>
+      <!-- .header-container -->
+    </header>
+    <!-- .header-main -->
+    <main class="main-wrapper">
+      <section class="section-category">
+        <div class="container">
+          <div class="category-titles">
+            <p>Project Name:</p>
+            <p>Region/Country:</p>
+            <p>Sector and Themes:</p>
+            <p>Year:</span>
+            <p>Project Leaders:</p>
+          </div>
+          <div class="category-description">
+            <span>category name</span>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>2019</p>
+            <p>John Green</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-quote">
+        <figure class="quote-image">
+          <img src="img/Landscape-desktop.png" srcset="Landscape-mobile.png 360w,
+          img/Landscape-tablet.png 768w,img/Landscape-desktop.png" sizes="(max-width: 767px) 360px,
+          (max-width: 1199px) 768px,1200px" alt="landscape image">
+          <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsum eum accusamus nulla deserunt dignissimos perferendis.</figcaption>
+        </figure>
+        <div class="container"></div>
+      </section>
+    </main>
+  </body>
+  <footer></footer>
+  <script src="js/app.js"></script>
+</html>
