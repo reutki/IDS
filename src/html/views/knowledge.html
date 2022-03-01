@@ -1,129 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
-          minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="Home Page" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="description" content="Home Page Description" />
-    <meta name="keywords" content="Home Page Keywords" />
-    <title>Knowledge Management Journey</title>
-    <link rel="stylesheet" href="../../css/app.scss" />
-  </head>
-  <body>
-    <header class="header-main">
-      <div class="header-container">
-        <a href="/" class="header-logo">
-          <img
-            srcset="
+          minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title" content="Home Page" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Home Page Description" />
+  <meta name="keywords" content="Home Page Keywords" />
+  <title>Knowledge Management Journey</title>
+  <link rel="stylesheet" href="../../css/app.scss" />
+</head>
+
+<body>
+  <header class="header-main">
+    <div class="header-container">
+      <a href="/" class="header-logo">
+        <img srcset="
               img/logo-small.png   767w,
               img/logo-medium.png 1199w,
               img/logo.svg
-            "
-            sizes="(max-width:767px) 320px, (max-width:1199px) 768px,1200px "
-            src="img/logo.svg"
-            alt="IDS logo"
-          />
+            " sizes="(max-width:767px) 320px, (max-width:1199px) 768px,1200px " src="img/logo.svg" alt="IDS logo" />
+      </a>
+      <!-- .header-log -->
+      <button class="burger-btn" type="button" title="Burger button" aria-labelledby="Open menu">
+        <svg class="icon-burger" version="1.1" viewBox="0 0 100 100">
+          <path class="line line1" d="M 30,65 H 70" />
+          <path class="line line2"
+            d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695" />
+          <path class="line line3"
+            d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695" />
+        </svg>
+        <!-- .icon-burger -->
+        <svg class="icon-cross" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+          <path class="line" d="M 34,32 L 66,68" />
+          <path class="line" d="M 66,32 L 34,68" />
+        </svg>
+        <!-- .icon-cross -->
+      </button>
+      <!-- .burger-btn -->
+      <div class="mobile-box">
+        <nav class="header-nav">
+          <a class="active" href="./index.html">About us</a>
+          <a href="./knowledge.html">Knowledge Management Journey</a>
+          <a href="#">Knowledge Solutions</a>
+        </nav>
+        <!-- .header-nav -->
+        <a class="btn primary" href="pdf/Manual.pdf" title="Link download pdf" target="_blank" rel="noopener noreferrer"
+          aria-labelledby="Download Manual pdf file" download="Manual.pdf">
+          <span>DOWNLOAD PDF</span>
+          <span>DOWNLOAD Full Publication PDF</span>
         </a>
-        <!-- .header-log -->
-        <button
-          class="burger-btn"
-          type="button"
-          title="Burger button"
-          aria-labelledby="Open menu"
-        >
-          <svg class="icon-burger" version="1.1" viewBox="0 0 100 100">
-            <path class="line line1" d="M 30,65 H 70" />
-            <path
-              class="line line2"
-              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
-            />
-            <path
-              class="line line3"
-              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
-            />
-          </svg>
-          <!-- .icon-burger -->
-          <svg
-            class="icon-cross"
-            version="1.1"
-            height="100"
-            width="100"
-            viewBox="0 0 100 100"
-          >
-            <path class="line" d="M 34,32 L 66,68" />
-            <path class="line" d="M 66,32 L 34,68" />
-          </svg>
-          <!-- .icon-cross -->
-        </button>
-        <!-- .burger-btn -->
-        <div class="mobile-box">
-          <nav class="header-nav">
-            <a class="active" href="./index.html">About us</a>
-            <a href="./knowledge.html">Knowledge Management Journey</a>
-            <a href="#">Knowledge Solutions</a>
-          </nav>
-          <!-- .header-nav -->
-          <a
-            class="btn primary"
-            href="pdf/Manual.pdf"
-            title="Link download pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-labelledby="Download Manual pdf file"
-            download="Manual.pdf"
-          >
-            <span>DOWNLOAD PDF</span>
-            <span>DOWNLOAD Full Publication PDF</span>
-          </a>
-        </div>
-        <!-- .mobile-box -->
       </div>
-      <!-- .header-container -->
-    </header>
-    <!-- .header-main -->
-    <main class="main-wrapper">
-      <section class="section-category">
-        <div class="container">
-          <div class="category-titles">
-            <p>Project Name:</p>
-            <p>Region/Country:</p>
-            <p>Sector and Themes:</p>
-            <p>Year:</span>
+      <!-- .mobile-box -->
+    </div>
+    <!-- .header-container -->
+  </header>
+  <!-- .header-main -->
+  <main class="main-wrapper">
+    <section class="section-category">
+      <div class="container">
+        <div class="category-titles">
+          <p>Project Name:</p>
+          <p>Region/Country:</p>
+          <p>Sector and Themes:</p>
+          <p>Year:</span>
             <p>Project Leaders:</p>
-          </div>
-          <div class="category-description">
-            <span>category name</span>
-            <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>2019</p>
-            <p>John Green</p>
-          </div>
         </div>
-      </section>
-      <section class="section-quote">
-        <figure class="quote-image">
-          <img src="img/Landscape-desktop.png" srcset="img/Landscape-mobile.png 360w,
+        <!-- .category-titles -->
+        <div class="category-description">
+          <span>category name</span>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!
+          </h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>2019</p>
+          <p>John Green</p>
+        </div>
+        <!-- .category-description -->
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .section-category -->
+    <section class="section-quote">
+      <figure class="quote-image">
+        <img src="img/Landscape-desktop.png" srcset="img/Landscape-mobile.png 360w,
           img/Landscape-tablet.png 768w, img/Landscape-desktop.png" sizes="(max-width: 767px) 320px,
           (max-width: 1199px) 768px,1200px" alt="landscape image">
-          <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsum eum accusamus nulla deserunt dignissimos perferendis.</figcaption>
-        </figure>
-        <div class="container"></div>
-      </section>
-    </main>
-  </body>
-  <footer></footer>
-  <script src="js/app.js"></script>
+        <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsum eum accusamus nulla deserunt
+          dignissimos perferendis.</figcaption>
+      </figure>
+      <!-- .quote-image -->
+      <div class="container">
+        <div class="svg-container">
+
+          <svg class="quote-icon" width="41" height="30" viewBox="0 0 41 30" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 22.45C0 27.0195 2.7336 30 6.83343 30C10.7379 30 13.4715 27.2183 14.0575 23.2451C11.91 22.0525 9.6647 20.9604 9.6647 17.6817C9.6647 13.8079 12.1053 9.3378 19.9143 3.87381L17.8644 0C6.6381 7.35121 0 15.0988 0 22.45M21.0857 22.45C21.0857 27.0195 23.8193 30 27.9191 30C31.8236 30 34.5572 27.2183 35.1433 23.2451C32.9957 22.0525 30.7504 20.9604 30.7504 17.6817C30.7504 13.8079 33.1899 9.3378 41 3.87381L38.9501 0C27.7238 7.35121 21.0857 15.0988 21.0857 22.45"
+          fill="#E76ECE" />
+        </svg>
+      </div>
+        <div class="container-quote">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae eos eius ullam perspiciatis, at
+            minus sunt? Laboriosam mollitia.</p>
+            <p>-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse modi possimus aliquid nam cupiditate.</p>
+        </div>
+        <!-- .container-quote  -->
+
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .section-quote -->
+  </main>
+</body>
+<footer></footer>
+<script src="js/app.js"></script>
+
 </html>

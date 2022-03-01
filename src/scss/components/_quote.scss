@@ -1,28 +1,39 @@
 .section-quote {
+  padding-bottom: 50px;
+  @media (min-width: 1200px) {
+    padding-bottom: 100px;
+  }
+  .container {
+    justify-content: center;
+  }
 }
 .quote-image {
   width: 100%;
   margin: 0;
   padding: 0;
+  figure {
+    width: 100%;
+  }
   img {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 17px;
     @media (min-width: 768px) {
       margin-top: 15px;
     }
-    @media (min-width: 1199px) {
+    @media (min-width: 1200px) {
       margin-top: 30px;
     }
   }
   figcaption {
-    @include fluidValue(margin-left, 180, 36, 1680, 768);
     font-size: 14px;
-
+    margin: 17px 12px 50px;
+    color: $colorGray-200;
     @media (min-width: 768px) {
       font-size: 16px;
       line-height: 21px;
+      @include fluidValue(margin-left, 180, 36, 768, 1680);
     }
-    @media (min-width: 1199px) {
+    @media (min-width: 1200px) {
       font-size: 18px;
       line-height: 27px;
     }

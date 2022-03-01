@@ -1,0 +1,59 @@
+.container-quote {
+  border: 2px $colorPink solid;
+  max-width: 980px;
+  text-align: center;
+  border-top: 0;
+  display: grid;
+  justify-items: center;
+  padding: 60px 10px 40px;
+  @media (min-width: 768px) {
+    padding: 80px 60px;
+  }
+  @media (min-width: 1200px) {
+    padding: 100px 95px 60px;
+  }
+
+  p {
+    max-width: 790px;
+    font-style: italic;
+  }
+  p:last-of-type {
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+    max-width: 600px;
+  }
+}
+.svg-container {
+  max-width: 980px;
+  position: relative;
+  border-left: 2px $colorPink solid;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    @include fluidValue(width, 183, 40, 1680, 320);
+    background-color: $colorPink;
+    z-index: 2;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $colorPink;
+  }
+}
+.quote-icon {
+  @include fluidValue(margin-left, 189, 40, 1680, 320);
+
+  @media (min-width: 768px) {
+    width: 70px;
+    height: 51px;
+  }
+}
