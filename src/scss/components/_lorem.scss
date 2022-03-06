@@ -1,0 +1,51 @@
+.section-lorem {
+  background-color: $colorGray-300;
+  padding: 50px 0;
+
+  @media (min-width: 1199px) {
+    padding: 100px 0;
+  }
+
+  .container {
+    justify-items: center;
+    h2,
+    p {
+      max-width: 790px;
+      margin-bottom: 50px;
+
+      @media (min-width: 1199px) {
+        margin-bottom: 60px;
+      }
+    }
+    h2 {
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: start;
+      @media (min-width: 1199px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  figure {
+    margin-bottom: 86px;
+
+    @media (min-width: 1199px) {
+      margin-bottom: 117px;
+    }
+  }
+}
+
+.lorem-image {
+  width: 100%;
+  figcaption {
+    color: #717171;
+  }
+  img {
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    @media (min-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+}

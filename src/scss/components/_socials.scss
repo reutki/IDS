@@ -1,0 +1,57 @@
+.section-socials {
+  padding: 50px 0;
+  background: url(/img/svg/decor.svg);
+  background-position-y: 30vh;
+  background-repeat: no-repeat;
+
+  @media (min-width: 1199px) {
+    padding: 100px 0;
+  }
+  .container {
+    background-color: $colorGreen-100;
+    max-width: 980px;
+    padding: 50px 12px;
+
+    @media (min-width: 768px) {
+      padding: 70px 60px;
+    }
+    @media (min-width: 1199px) {
+      padding: 100px 95px;
+    }
+  }
+  .hashtags {
+    max-width: 680px;
+  }
+  a {
+    max-width: 760px;
+    margin-bottom: 40px;
+    color: #004888;
+    &:hover {
+      color: $colorPink;
+    }
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
+.title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: $font-ideal-sans;
+  font-weight: bold;
+}
+.socials {
+  display: flex;
+  gap: 40px;
+}
+svg {
+  width: 27.5px;
+  height: 24px;
+}
+svg:hover {
+  path {
+    fill: $colorPink;
+    cursor: pointer;
+  }
+}

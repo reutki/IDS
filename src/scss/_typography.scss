@@ -65,3 +65,13 @@ h6 {
     line-height: 21px;
   }
 }
+
+figcaption {
+  font-family: $font-ideal-sans;
+  font-size: 18px;
+  line-height: 27px;
+  @media (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

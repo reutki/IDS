@@ -1,0 +1,18 @@
+.section-disgnissimos {
+  justify-content: center;
+  display: grid;
+  padding: 50px 0;
+  background-color: $colorBlue-200;
+
+  @media (min-width: 1199px) {
+    padding: 100px 0;
+  }
+  h2,
+  p {
+    max-width: 790px;
+    justify-items: center;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+}

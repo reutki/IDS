@@ -1,0 +1,24 @@
+.section-consecteur {
+  background-color: $colorBlue-200;
+  padding: 50px 0;
+  @media (min-width: 1199px) {
+    padding: 100px 0;
+  }
+  .container {
+    justify-content: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      font-family: $font-ideal-sans;
+      font-style: italic;
+      @media (min-width: 1199px) {
+        font-size: 22px;
+        line-height: 33px;
+        max-width: 790px;
+      }
+    }
+  }
+}

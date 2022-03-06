@@ -1,0 +1,66 @@
+.section-voluptates {
+  padding: 50px 0;
+
+  @media (min-width: 1199px) {
+    padding: 100px 0;
+  }
+  .container {
+    justify-items: center;
+    h2 {
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: start;
+    }
+    h3 {
+      margin-bottom: 42px;
+      color: $colorBlue-300;
+      font-style: italic;
+      font-family: $font-mercury;
+      font-weight: light;
+      max-width: 790px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 50px;
+      }
+      @media (min-width: 1199px) {
+        margin-bottom: 60px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      font-family: $font-ideal-sans;
+      font-style: italic;
+      max-width: 790px;
+      @media (min-width: 1199px) {
+        font-size: 22px;
+        line-height: 33px;
+      }
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  figure {
+    margin-bottom: 86px;
+
+    @media (min-width: 1199px) {
+      margin-bottom: 117px;
+    }
+  }
+}
+
+.voluptantes-image {
+  margin-bottom: 15px;
+  width: 100%;
+  figcaption {
+    color: #717171;
+  }
+  img {
+    max-width: 100%;
+    height: 100%;
+  }
+  @media (min-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}

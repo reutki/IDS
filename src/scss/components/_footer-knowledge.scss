@@ -1,0 +1,77 @@
+.footer-knowledge {
+  background-color: $colorDarkBlue;
+  padding: 50px 0;
+  color: $colorWhite;
+  @media (min-width: 768px) {
+    padding: 70px 0;
+  }
+  @media (min-width: 1199px) {
+    padding: 120px 0;
+  }
+  .container {
+    @media (min-width: 1199px) {
+      grid-template-columns: max-content max-content;
+      gap: 126px;
+    }
+  }
+}
+.about-ids-ducimus {
+  p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.13px;
+  }
+  @media (min-width: 1199px) {
+    max-width: 635px;
+    p {
+      margin-bottom: 90px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
+.about-ids {
+  grid-row: 1;
+  display: grid;
+  @media (max-width: 1199px) {
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 1.13px;
+  }
+  a {
+    text-transform: uppercase;
+  }
+  @media (min-width: 1199px) {
+    grid-row: unset;
+    display: grid;
+    max-width: 350px;
+    p {
+      margin-bottom: 124px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  a {
+    align-self: end;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+}
+.footer-title {
+  font-size: 28px;
+  line-height: 36px;
+  display: block;
+  margin-bottom: 20px;
+  @media (min-width: 1199px) {
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+}
