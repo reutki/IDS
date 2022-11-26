@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title" content="Home Page" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Home Page Description" />
+  <meta name="keywords" content="Home Page Keywords" />
+  <title>Knowledge Management Journey</title>
+  <link rel="stylesheet" href="../../css/app.scss" />
+</head>
+
+<body>
+  <header class="header-main">
+    <div class="header-container">
+      <a href="/" class="header-logo">
+        <img srcset="
+              img/logo-small.png   767w,
+              img/logo-medium.png 1199w,
+              img/logo.svg
+            " sizes="(max-width:767px) 320px, (max-width:1199px) 768px,1200px " src="img/logo.svg" alt="IDS logo" />
+      </a>
+      <!-- .header-log -->
+      <button class="burger-btn" type="button" title="Burger button" aria-labelledby="Open menu">
+        <svg class="icon-burger" version="1.1" viewBox="0 0 100 100">
+          <path class="line line1" d="M 30,65 H 70" />
+          <path class="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695" />
+          <path class="line line3" d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695" />
+        </svg>
+        <!-- .icon-burger -->
+        <svg class="icon-cross" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+          <path class="line" d="M 34,32 L 66,68" />
+          <path class="line" d="M 66,32 L 34,68" />
+        </svg>
+        <!-- .icon-cross -->
+      </button>
+      <!-- .burger-btn -->
+      <div class="mobile-box">
+        <nav class="header-nav">
+          <a class="active" href="./index.html">About us</a>
+          <a href="./knowledge.html">Knowledge Management Journey</a>
+          <a href="#">Knowledge Solutions</a>
+        </nav>
+        <!-- .header-nav -->
+        <a class="btn primary" href="pdf/Manual.pdf" title="Link download pdf" target="_blank" rel="noopener noreferrer" aria-labelledby="Download Manual pdf file" download="Manual.pdf">
+          <span>DOWNLOAD PDF</span>
+          <span>DOWNLOAD Full Publication PDF</span>
+        </a>
+      </div>
+      <!-- .mobile-box -->
+    </div>
+    <!-- .header-container -->
+  </header>
+  <!-- .header-main -->
+  <main class="main-wrapper">
+    <button class="back-to-top">Back to Top</button>
+    <section class="section-category">
+      <div class="container category-nonmobile">
+        <div class="category-titles">
+          <a href="/index.html">
+            < back</a>
+              <div class="circle-plant"><svg width="126" height="126" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="63" cy="63" r="62" fill="#E76ECE" stroke="#E76ECE" stroke-width="2" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M95.2383 73.2103L81.1999 65.2V61.9135H83.5027C86.2359 61.9135 88.4594 59.6757 88.4594 56.9252V55.8194C88.4594 54.8183 87.6502 54.004 86.6554 54.004H84.2465C83.0984 54.004 82.0411 54.3999 81.1999 55.0618C81.1999 55.0618 81.178 48.5348 81.1398 48.2298H84.7919C86.2276 48.2298 87.6159 47.9242 88.9178 47.3215C89.3971 47.0999 89.6068 46.529 89.3864 46.0469C89.1662 45.5647 88.5992 45.3536 88.1198 45.5753C87.0699 46.0612 85.9502 46.3077 84.7919 46.3077H81.1999V44.8344C81.1999 40.4085 84.778 36.8076 89.176 36.8076H92.7681V38.2808C92.7681 40.0918 92.1811 41.8023 91.0705 43.2276C90.745 43.6454 90.8177 44.2494 91.2327 44.577C91.6478 44.9044 92.2481 44.8313 92.5736 44.4137C93.9504 42.6466 94.678 40.5258 94.678 38.2808V36.5387C94.678 35.6273 93.9411 34.8857 93.0354 34.8857H89.1759C83.9317 34.8857 79.6304 39.0167 79.3109 44.2146C77.9638 42.7086 76.0132 41.7599 73.8459 41.7599H70.7935C69.9616 41.7599 69.2847 42.4409 69.2847 43.2784V45.4968C69.2847 49.5774 72.5835 52.8972 76.6384 52.8972H79.2896V64.1104L64.4127 55.6215V53.5936H65.7744C67.529 53.5936 68.9565 52.157 68.9565 50.3912V49.4426C68.9565 48.4365 68.1431 47.6181 67.1435 47.6181H65.6849C65.1603 47.6181 64.6655 47.7472 64.2288 47.9744C63.7898 46.7341 62.6118 45.8435 61.2305 45.8435H59.7719C58.7722 45.8435 57.9589 46.6621 57.9589 47.6682V48.6168C57.9589 50.3825 59.3864 51.8191 61.141 51.8191H62.5027V52.6326V55.7489L45.6158 65.3846V61.9761V60.7886H46.9447C49.2139 60.7886 51.06 58.9308 51.06 56.6473V55.5228C51.06 54.5529 50.2759 53.7638 49.3121 53.7638H47.8214C46.2289 53.7638 44.846 54.6793 44.1619 56.0141C43.1811 54.9609 41.7879 54.3009 40.2437 54.3009H38.7979C37.8255 54.3009 37.0343 55.097 37.0343 56.0757V57.5307C37.0343 60.5118 39.4444 62.9371 42.4066 62.9371H43.7059V66.4744L39.9827 68.5988C39.5237 68.8606 39.3628 69.4471 39.6229 69.909C39.8831 70.3707 40.466 70.5325 40.9248 70.271L43.7061 68.6841V74.9207C43.7061 75.4516 44.1335 75.8817 44.6611 75.8817C45.1886 75.8817 45.6161 75.4516 45.6161 74.9207V67.5941L49.177 65.5622L61.5854 72.6425L45.8402 81.6268L33.5964 74.4526L37.0606 72.4759C37.5195 72.2141 37.6804 71.6276 37.4203 71.1658C37.16 70.704 36.5771 70.542 36.1184 70.8038L31.9009 73.2103C31.4623 73.4606 31.1879 73.9313 31.1851 74.4387C31.1823 74.946 31.4512 75.4198 31.887 75.675L45.3586 83.5687L45.3613 83.5702L62.859 93.823C63.0781 93.9514 63.3237 94.0156 63.5695 94.0156C63.8153 94.0156 64.061 93.9514 64.2802 93.823L87.0703 80.4691C87.5261 80.2021 87.6805 79.6137 87.4151 79.155C87.1496 78.6963 86.5646 78.5407 86.1093 78.808L81.2517 81.6543L65.4579 72.6423L77.9143 65.5345L79.2899 66.3194V73.5755C79.2899 74.1064 79.7173 74.5366 80.2449 74.5366C80.7724 74.5366 81.1999 74.1064 81.1999 73.5755V67.4095L93.5428 74.4524L89.9295 76.5697C89.4736 76.8368 89.3193 77.4252 89.5846 77.8839C89.7621 78.1905 90.082 78.3616 90.4108 78.3616C90.5739 78.3616 90.7393 78.3195 90.8904 78.2309L95.2523 75.675C95.688 75.4198 95.957 74.946 95.9542 74.4387C95.9512 73.9313 95.677 73.4606 95.2383 73.2103ZM84.2465 55.9261H86.5494V56.9252C86.5494 58.6158 85.1827 59.9913 83.5027 59.9913H81.1999V58.9922C81.1999 57.3016 82.5667 55.9261 84.2465 55.9261ZM71.1949 45.4965C71.1949 48.5172 73.637 50.9748 76.6386 50.9748H79.2899V49.1603C79.2899 46.1395 76.8477 43.6819 73.8461 43.6819H71.1949V45.4965ZM45.6161 57.905C45.6161 56.6813 46.6055 55.6857 47.8214 55.6857H49.1502V56.647C49.1502 57.8708 48.1609 58.8662 46.9449 58.8662H45.6161V57.905ZM38.9445 57.5305C38.9445 59.4517 40.4976 61.0147 42.4067 61.0147H43.7061V59.707C43.7061 57.7857 42.153 56.2228 40.2438 56.2228H38.9445V57.5305ZM65.6853 49.5398H67.0469V50.391C67.0469 51.0969 66.4763 51.6712 65.7748 51.6712H64.4131V50.82C64.413 50.114 64.9838 49.5398 65.6853 49.5398ZM59.8692 47.7652V48.6164C59.8692 49.3224 60.4397 49.8967 61.1412 49.8966H62.503V49.0455C62.503 48.3395 61.9322 47.7652 61.2307 47.7652H59.8692ZM79.3412 82.7739L63.5698 92.0152L47.7508 82.7461L63.5218 73.7473L79.3412 82.7739ZM51.1132 64.4572L63.5216 71.5376L75.9781 64.43L64.4131 57.8308V64.4572C64.4131 64.9881 63.9856 65.4183 63.4581 65.4183C62.9305 65.4183 62.5031 64.9881 62.5031 64.4572V57.9582L51.1132 64.4572Z" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M61.1411 84.9733H62.5028V87.1676C62.5028 87.6985 62.9303 88.1287 63.4578 88.1287C63.9854 88.1287 64.4128 87.6985 64.4128 87.1676V84.9733H65.6222C67.2757 84.9733 68.6208 83.6197 68.6208 81.9556V81.1068C68.6208 80.2289 67.9111 79.5146 67.0387 79.5146H65.5014C64.8119 79.5146 64.1765 79.7507 63.6694 80.1457C63.0852 79.4445 62.2089 78.9976 61.2306 78.9976H59.772C58.7723 78.9976 57.959 79.8161 57.959 80.8222V81.7708C57.959 83.5367 59.3865 84.9733 61.1411 84.9733ZM65.5014 81.4369H66.7108V81.9557C66.7108 82.5598 66.2225 83.0512 65.6222 83.0512H64.4128V82.5324C64.4128 81.9282 64.9011 81.4369 65.5014 81.4369ZM61.2306 80.9197H59.869V81.771C59.869 82.4769 60.4396 83.0511 61.1411 83.0511H62.5028V82.1999C62.5028 81.4939 61.9321 80.9197 61.2306 80.9197Z" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2535 36.1779C38.8205 38.0326 37.1637 39.4181 35.1904 39.4181C32.8885 39.4181 31.0156 37.5334 31.0156 35.2168C31.0156 32.9002 32.8885 31.0156 35.1904 31.0156C37.1637 31.0156 38.8205 32.401 39.2537 34.2559H44.6609C44.9143 34.2559 45.1572 34.3571 45.3363 34.5373L55.5212 44.7868C55.8942 45.1621 55.8942 45.7706 55.5212 46.146C55.3346 46.3336 55.0902 46.4274 54.8458 46.4274C54.6015 46.4274 54.357 46.3336 54.1704 46.146L44.2653 36.1779H39.2535ZM37.4551 35.2168C37.4551 33.9602 36.4392 32.9378 35.1904 32.9378C33.9416 32.9378 32.9256 33.9601 32.9256 35.2168C32.9256 36.4736 33.9416 37.496 35.1904 37.496C36.4391 37.496 37.4551 36.4736 37.4551 35.2168Z" fill="white" />
+                  <path d="M44.6609 41.4839H39.4535C38.926 41.4839 38.4985 41.9141 38.4985 42.445C38.4985 42.9759 38.926 43.406 39.4535 43.406H44.661C45.1886 43.406 45.616 42.9759 45.616 42.445C45.616 41.9141 45.1884 41.4839 44.6609 41.4839Z" fill="white" />
+                  <path d="M44.661 45.4717H33.7919C33.2644 45.4717 32.8369 45.9019 32.8369 46.4328C32.8369 46.9637 33.2644 47.3938 33.7919 47.3938H44.661C45.1885 47.3938 45.616 46.9637 45.616 46.4328C45.616 45.9019 45.1885 45.4717 44.661 45.4717V45.4717Z" fill="white" />
+                  <path d="M44.661 49.4595H33.7919C33.2644 49.4595 32.8369 49.8896 32.8369 50.4205C32.8369 50.9514 33.2644 51.3816 33.7919 51.3816H44.661C45.1885 51.3816 45.616 50.9514 45.616 50.4205C45.616 49.8896 45.1885 49.4595 44.661 49.4595Z" fill="white" />
+                  <path d="M33.7919 43.406H36.0095C36.537 43.406 36.9645 42.9759 36.9645 42.445C36.9645 41.9141 36.537 41.4839 36.0095 41.4839H33.7919C33.2644 41.4839 32.8369 41.9141 32.8369 42.445C32.8369 42.9759 33.2644 43.406 33.7919 43.406Z" fill="white" />
+                </svg></div>
+              <p>Project Name:</p>
+
+              <p>Region/Country:</p>
+              <p>Sector and Themes:</p>
+              <p>Year:</span>
+              <p>Project Leaders:</p>
+        </div>
+        <!-- .category-titles -->
+        <div class="category-description">
+          <span>category name</span>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!
+          </h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>2019</p>
+          <p>John Green</p>
+        </div>
+        <!-- .category-description -->
+      </div>
+      <div class=" category-mobile">
+        <a href="/index.html">
+          < back</a>
+            <div class="circle-plant"><svg width="126" height="126" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="63" cy="63" r="62" fill="#E76ECE" stroke="#E76ECE" stroke-width="2" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M95.2383 73.2103L81.1999 65.2V61.9135H83.5027C86.2359 61.9135 88.4594 59.6757 88.4594 56.9252V55.8194C88.4594 54.8183 87.6502 54.004 86.6554 54.004H84.2465C83.0984 54.004 82.0411 54.3999 81.1999 55.0618C81.1999 55.0618 81.178 48.5348 81.1398 48.2298H84.7919C86.2276 48.2298 87.6159 47.9242 88.9178 47.3215C89.3971 47.0999 89.6068 46.529 89.3864 46.0469C89.1662 45.5647 88.5992 45.3536 88.1198 45.5753C87.0699 46.0612 85.9502 46.3077 84.7919 46.3077H81.1999V44.8344C81.1999 40.4085 84.778 36.8076 89.176 36.8076H92.7681V38.2808C92.7681 40.0918 92.1811 41.8023 91.0705 43.2276C90.745 43.6454 90.8177 44.2494 91.2327 44.577C91.6478 44.9044 92.2481 44.8313 92.5736 44.4137C93.9504 42.6466 94.678 40.5258 94.678 38.2808V36.5387C94.678 35.6273 93.9411 34.8857 93.0354 34.8857H89.1759C83.9317 34.8857 79.6304 39.0167 79.3109 44.2146C77.9638 42.7086 76.0132 41.7599 73.8459 41.7599H70.7935C69.9616 41.7599 69.2847 42.4409 69.2847 43.2784V45.4968C69.2847 49.5774 72.5835 52.8972 76.6384 52.8972H79.2896V64.1104L64.4127 55.6215V53.5936H65.7744C67.529 53.5936 68.9565 52.157 68.9565 50.3912V49.4426C68.9565 48.4365 68.1431 47.6181 67.1435 47.6181H65.6849C65.1603 47.6181 64.6655 47.7472 64.2288 47.9744C63.7898 46.7341 62.6118 45.8435 61.2305 45.8435H59.7719C58.7722 45.8435 57.9589 46.6621 57.9589 47.6682V48.6168C57.9589 50.3825 59.3864 51.8191 61.141 51.8191H62.5027V52.6326V55.7489L45.6158 65.3846V61.9761V60.7886H46.9447C49.2139 60.7886 51.06 58.9308 51.06 56.6473V55.5228C51.06 54.5529 50.2759 53.7638 49.3121 53.7638H47.8214C46.2289 53.7638 44.846 54.6793 44.1619 56.0141C43.1811 54.9609 41.7879 54.3009 40.2437 54.3009H38.7979C37.8255 54.3009 37.0343 55.097 37.0343 56.0757V57.5307C37.0343 60.5118 39.4444 62.9371 42.4066 62.9371H43.7059V66.4744L39.9827 68.5988C39.5237 68.8606 39.3628 69.4471 39.6229 69.909C39.8831 70.3707 40.466 70.5325 40.9248 70.271L43.7061 68.6841V74.9207C43.7061 75.4516 44.1335 75.8817 44.6611 75.8817C45.1886 75.8817 45.6161 75.4516 45.6161 74.9207V67.5941L49.177 65.5622L61.5854 72.6425L45.8402 81.6268L33.5964 74.4526L37.0606 72.4759C37.5195 72.2141 37.6804 71.6276 37.4203 71.1658C37.16 70.704 36.5771 70.542 36.1184 70.8038L31.9009 73.2103C31.4623 73.4606 31.1879 73.9313 31.1851 74.4387C31.1823 74.946 31.4512 75.4198 31.887 75.675L45.3586 83.5687L45.3613 83.5702L62.859 93.823C63.0781 93.9514 63.3237 94.0156 63.5695 94.0156C63.8153 94.0156 64.061 93.9514 64.2802 93.823L87.0703 80.4691C87.5261 80.2021 87.6805 79.6137 87.4151 79.155C87.1496 78.6963 86.5646 78.5407 86.1093 78.808L81.2517 81.6543L65.4579 72.6423L77.9143 65.5345L79.2899 66.3194V73.5755C79.2899 74.1064 79.7173 74.5366 80.2449 74.5366C80.7724 74.5366 81.1999 74.1064 81.1999 73.5755V67.4095L93.5428 74.4524L89.9295 76.5697C89.4736 76.8368 89.3193 77.4252 89.5846 77.8839C89.7621 78.1905 90.082 78.3616 90.4108 78.3616C90.5739 78.3616 90.7393 78.3195 90.8904 78.2309L95.2523 75.675C95.688 75.4198 95.957 74.946 95.9542 74.4387C95.9512 73.9313 95.677 73.4606 95.2383 73.2103ZM84.2465 55.9261H86.5494V56.9252C86.5494 58.6158 85.1827 59.9913 83.5027 59.9913H81.1999V58.9922C81.1999 57.3016 82.5667 55.9261 84.2465 55.9261ZM71.1949 45.4965C71.1949 48.5172 73.637 50.9748 76.6386 50.9748H79.2899V49.1603C79.2899 46.1395 76.8477 43.6819 73.8461 43.6819H71.1949V45.4965ZM45.6161 57.905C45.6161 56.6813 46.6055 55.6857 47.8214 55.6857H49.1502V56.647C49.1502 57.8708 48.1609 58.8662 46.9449 58.8662H45.6161V57.905ZM38.9445 57.5305C38.9445 59.4517 40.4976 61.0147 42.4067 61.0147H43.7061V59.707C43.7061 57.7857 42.153 56.2228 40.2438 56.2228H38.9445V57.5305ZM65.6853 49.5398H67.0469V50.391C67.0469 51.0969 66.4763 51.6712 65.7748 51.6712H64.4131V50.82C64.413 50.114 64.9838 49.5398 65.6853 49.5398ZM59.8692 47.7652V48.6164C59.8692 49.3224 60.4397 49.8967 61.1412 49.8966H62.503V49.0455C62.503 48.3395 61.9322 47.7652 61.2307 47.7652H59.8692ZM79.3412 82.7739L63.5698 92.0152L47.7508 82.7461L63.5218 73.7473L79.3412 82.7739ZM51.1132 64.4572L63.5216 71.5376L75.9781 64.43L64.4131 57.8308V64.4572C64.4131 64.9881 63.9856 65.4183 63.4581 65.4183C62.9305 65.4183 62.5031 64.9881 62.5031 64.4572V57.9582L51.1132 64.4572Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M61.1411 84.9733H62.5028V87.1676C62.5028 87.6985 62.9303 88.1287 63.4578 88.1287C63.9854 88.1287 64.4128 87.6985 64.4128 87.1676V84.9733H65.6222C67.2757 84.9733 68.6208 83.6197 68.6208 81.9556V81.1068C68.6208 80.2289 67.9111 79.5146 67.0387 79.5146H65.5014C64.8119 79.5146 64.1765 79.7507 63.6694 80.1457C63.0852 79.4445 62.2089 78.9976 61.2306 78.9976H59.772C58.7723 78.9976 57.959 79.8161 57.959 80.8222V81.7708C57.959 83.5367 59.3865 84.9733 61.1411 84.9733ZM65.5014 81.4369H66.7108V81.9557C66.7108 82.5598 66.2225 83.0512 65.6222 83.0512H64.4128V82.5324C64.4128 81.9282 64.9011 81.4369 65.5014 81.4369ZM61.2306 80.9197H59.869V81.771C59.869 82.4769 60.4396 83.0511 61.1411 83.0511H62.5028V82.1999C62.5028 81.4939 61.9321 80.9197 61.2306 80.9197Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2535 36.1779C38.8205 38.0326 37.1637 39.4181 35.1904 39.4181C32.8885 39.4181 31.0156 37.5334 31.0156 35.2168C31.0156 32.9002 32.8885 31.0156 35.1904 31.0156C37.1637 31.0156 38.8205 32.401 39.2537 34.2559H44.6609C44.9143 34.2559 45.1572 34.3571 45.3363 34.5373L55.5212 44.7868C55.8942 45.1621 55.8942 45.7706 55.5212 46.146C55.3346 46.3336 55.0902 46.4274 54.8458 46.4274C54.6015 46.4274 54.357 46.3336 54.1704 46.146L44.2653 36.1779H39.2535ZM37.4551 35.2168C37.4551 33.9602 36.4392 32.9378 35.1904 32.9378C33.9416 32.9378 32.9256 33.9601 32.9256 35.2168C32.9256 36.4736 33.9416 37.496 35.1904 37.496C36.4391 37.496 37.4551 36.4736 37.4551 35.2168Z" fill="white" />
+                <path d="M44.6609 41.4839H39.4535C38.926 41.4839 38.4985 41.9141 38.4985 42.445C38.4985 42.9759 38.926 43.406 39.4535 43.406H44.661C45.1886 43.406 45.616 42.9759 45.616 42.445C45.616 41.9141 45.1884 41.4839 44.6609 41.4839Z" fill="white" />
+                <path d="M44.661 45.4717H33.7919C33.2644 45.4717 32.8369 45.9019 32.8369 46.4328C32.8369 46.9637 33.2644 47.3938 33.7919 47.3938H44.661C45.1885 47.3938 45.616 46.9637 45.616 46.4328C45.616 45.9019 45.1885 45.4717 44.661 45.4717V45.4717Z" fill="white" />
+                <path d="M44.661 49.4595H33.7919C33.2644 49.4595 32.8369 49.8896 32.8369 50.4205C32.8369 50.9514 33.2644 51.3816 33.7919 51.3816H44.661C45.1885 51.3816 45.616 50.9514 45.616 50.4205C45.616 49.8896 45.1885 49.4595 44.661 49.4595Z" fill="white" />
+                <path d="M33.7919 43.406H36.0095C36.537 43.406 36.9645 42.9759 36.9645 42.445C36.9645 41.9141 36.537 41.4839 36.0095 41.4839H33.7919C33.2644 41.4839 32.8369 41.9141 32.8369 42.445C32.8369 42.9759 33.2644 43.406 33.7919 43.406Z" fill="white" />
+              </svg>
+            </div>
+            <span>category name</span>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!
+            </h3>
+            <p class="category">Project Name:</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="category">Region/Country:</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="category">Sector and Themes:</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p class="category">Year:</p>
+            <p>2019</p>
+            <p class="category">Project Leaders:</p>
+            <p>John Green</p>
+
+
+            <!-- .container -->
+    </section>
+    <!-- .section-category -->
+    <section class="section-quote">
+      <figure class="quote-image">
+        <img src="img/Landscape-desktop.png" srcset="img/Landscape-mobile.png 360w,
+          img/Landscape-tablet.png 768w, img/Landscape-desktop.png" sizes="(max-width: 767px) 320px,
+          (max-width: 1199px) 768px,1200px" alt="landscape image">
+        <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsum eum accusamus nulla deserunt
+          dignissimos perferendis.</figcaption>
+      </figure>
+      <!-- .quote-image -->
+      <div class="container">
+        <div class="svg-container">
+
+          <svg class="quote-icon" width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22.45C0 27.0195 2.7336 30 6.83343 30C10.7379 30 13.4715 27.2183 14.0575 23.2451C11.91 22.0525 9.6647 20.9604 9.6647 17.6817C9.6647 13.8079 12.1053 9.3378 19.9143 3.87381L17.8644 0C6.6381 7.35121 0 15.0988 0 22.45M21.0857 22.45C21.0857 27.0195 23.8193 30 27.9191 30C31.8236 30 34.5572 27.2183 35.1433 23.2451C32.9957 22.0525 30.7504 20.9604 30.7504 17.6817C30.7504 13.8079 33.1899 9.3378 41 3.87381L38.9501 0C27.7238 7.35121 21.0857 15.0988 21.0857 22.45" fill="#E76ECE" />
+          </svg>
+        </div>
+        <div class="container-quote">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae eos eius ullam perspiciatis, at
+            minus sunt? Laboriosam mollitia.</p>
+          <p>-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse modi possimus aliquid nam cupiditate.</p>
+        </div>
+        <!-- .container-quote  -->
+
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .section-quote -->
+    <section class="section-consecteur">
+      <div class="container">
+        <h2>Consecteur adipisicing</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod accusamus illum sunt error modi ab
+          voluptates
+          temporibus inventore. Distinctio nostrum modi nam voluptate cumque recusandae, aliquam esse tempore soluta
+          maxime, aut a dolores deserunt incidunt. Doloremque tempore non quidem, fuga obcaecati ullam vitae hic quam
+          modi iure nostrum labore aliquid, est, quae quaerat facere? Ullam nostrum dolores quae iste impedit corrupti
+          incidunt fugiat laborum alias nobis dolore reiciendis vero consequatur adipisci atque, molestiae voluptas
+          corporis exercitationem odio.</p>
+      </div>
+    </section>
+    <section class="section-voluptates">
+      <div class="container">
+        <h2>Voluptates</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa consequuntur nesciunt molestiae sunt
+          voluptatibus odio nostrum illo, officiis, dolor delectus modi ad quis aspernatur labore porro nemo quidem
+          tenetur id sit fugiat? Minima dicta hic sed quam impedit voluptate fugit possimus necessitatibus voluptatum
+          numquam?</p>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam adipisci dolorem repudiandae,
+          ratione.</h3>
+        <figure class="voluptantes-image">
+          <img src="img/Landscape-desktop.png" srcset="img/Landscape-mobile.png 360w,
+            img/Landscape-tablet.png 768w, img/Landscape-desktop.png" sizes="(max-width: 767px) 320px,
+            (max-width: 1199px) 768px,1200px" alt="landscape image">
+          <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsum eum accusamus nulla deserunt
+            dignissimos perferendis.</figcaption>
+        </figure>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit, esse dicta nobis a reprehenderit. In
+          provident earum laudantium ex magni, nesciunt enim nisi, mollitia quis delectus cum. Blanditiis veniam
+          doloremque voluptas, dicta, culpa nisi, soluta quasi voluptatibus amet consequatur temporibus sunt possimus
+          ea.</p>
+      </div>
+    </section>
+    <section class="section-lorem">
+      <div class="container">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quibusdam iusto tempore culpa quasi
+          expedita
+          exercitationem commodi eius consectetur repellat est, deserunt repudiandae iste impedit cumque ullam aperiam
+          temporibus quia eum ex error doloremque. Quia itaque nesciunt necessitatibus, quibusdam odio ducimus odit
+          repellendus omnis earum reiciendis dolorum perspiciatis architecto eligendi! Dignissimos cupiditate expedita
+          minus maiores illo quibusdam sed, porro veniam eum nobis eius doloribus similique asperiores nisi est
+          consectetur error ullam ex neque temporibus voluptate placeat nulla? Magni, deserunt iusto dignissimos ipsa
+          id
+          doloribus fuga itaque quibusdam esse. Dignissimos cupiditate expedita minus maiores illo quibusdam sed,
+          porro
+          veniam eum nobis eius doloribus similique asperiores nisi est consectetur error ullam ex neque temporibus
+          voluptate placeat nulla? Magni, deserunt.</p>
+        <figure class="lorem-image">
+          <img src="img/Landscape-desktop.png" srcset="img/Landscape-mobile.png 360w,
+          img/Landscape-tablet.png 768w, img/Landscape-desktop.png" sizes="(max-width: 767px) 320px,
+          (max-width: 1199px) 768px,1200px" alt="landscape image">
+          <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam adipisci dolorem
+            repudiandae, ratione perspiciatis.</figcaption>
+        </figure>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quibusdam iusto tempore culpa quasi
+          expedita
+          exercitationem commodi eius consectetur repellat est, deserunt repudiandae iste impedit cumque ullam aperiam
+          temporibus quia eum ex error doloremque. Quia itaque nesciunt necessitatibus, quibusdam odio ducimus odit
+          repellendus omnis earum reiciendis dolorum perspiciatis architecto eligendi! Dignissimos cupiditate expedita
+          minus maiores illo quibusdam sed, porro veniam eum nobis eius doloribus similique asperiores nisi est
+          consectetur error ullam ex neque temporibus voluptate placeat nulla? Magni, deserunt iusto dignissimos ipsa
+          id
+          doloribus fuga itaque quibusdam esse. Dignissimos cupiditate expedita minus maiores illo quibusdam sed,
+          porro
+          veniam eum nobis eius doloribus similique asperiores nisi est consectetur error ullam ex neque temporibus
+          voluptate placeat nulla? Magni, deserunt.</p>
+      </div>
+    </section>
+    <section class="section-nihil">
+      <div class="container">
+        <h2>Nihil quibusdam iusto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit, esse dicta nobis a reprehenderit. In
+          provident earum laudantium ex magni, nesciunt enim nisi, mollitia quis delectus cum. Blanditiis veniam
+          doloremque voluptas, dicta, culpa nisi, soluta quasi voluptatibus amet consequatur temporibus sunt possimus
+          ea. Blanditiis veniam doloremque voluptas, dicta, culpa nisi, soluta quasi voluptatibus amet consequatur.
+        </p>
+      </div>
+    </section>
+    <section class="section-disgnissimos">
+      <div class="container">
+        <h2>Dignissimos cupiditate</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit, esse dicta nobis a reprehenderit. In
+          provident earum laudantium ex magni, nesciunt enim nisi, mollitia quis delectus cum. Blanditiis veniam
+          doloremque voluptas, dicta, culpa nisi, soluta quasi voluptatibus amet consequatur temporibus sunt possimus
+          ea.</p>
+      </div>
+    </section>
+    <section class="section-quotes">
+      <div class="container">
+        <div class="svg-container">
+
+          <svg class="quote-icon" width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22.45C0 27.0195 2.7336 30 6.83343 30C10.7379 30 13.4715 27.2183 14.0575 23.2451C11.91 22.0525 9.6647 20.9604 9.6647 17.6817C9.6647 13.8079 12.1053 9.3378 19.9143 3.87381L17.8644 0C6.6381 7.35121 0 15.0988 0 22.45M21.0857 22.45C21.0857 27.0195 23.8193 30 27.9191 30C31.8236 30 34.5572 27.2183 35.1433 23.2451C32.9957 22.0525 30.7504 20.9604 30.7504 17.6817C30.7504 13.8079 33.1899 9.3378 41 3.87381L38.9501 0C27.7238 7.35121 21.0857 15.0988 21.0857 22.45" fill="#E76ECE" />
+          </svg>
+        </div>
+        <div class="container-quote" style="margin-bottom: 50px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae quidem numquam hic quaerat
+            corporis,
+            ullam inventore voluptatem.</p>
+          <p>-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse modi possimus aliquid nam cupiditate.</p>
+        </div>
+        <div class="svg-container">
+
+          <svg class="quote-icon" width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22.45C0 27.0195 2.7336 30 6.83343 30C10.7379 30 13.4715 27.2183 14.0575 23.2451C11.91 22.0525 9.6647 20.9604 9.6647 17.6817C9.6647 13.8079 12.1053 9.3378 19.9143 3.87381L17.8644 0C6.6381 7.35121 0 15.0988 0 22.45M21.0857 22.45C21.0857 27.0195 23.8193 30 27.9191 30C31.8236 30 34.5572 27.2183 35.1433 23.2451C32.9957 22.0525 30.7504 20.9604 30.7504 17.6817C30.7504 13.8079 33.1899 9.3378 41 3.87381L38.9501 0C27.7238 7.35121 21.0857 15.0988 21.0857 22.45" fill="#E76ECE" />
+          </svg>
+        </div>
+        <div class="container-quote">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae quidem numquam hic quaerat
+            corporis,
+            ullam inventore voluptatem.</p>
+          <p>-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse modi possimus aliquid nam cupiditate.</p>
+        </div>
+        <!-- .container-quote  -->
+
+      </div>
+      <!-- .container -->
+    </section>
+    <section class="section-socials">
+      <div class="container">
+        <p class="title">Hashtags:</p>
+        <p class="hashtags">#Necessitatibusasdf #Commodi #Excepturi #Ducimus #Quibusdam #Inventore #Sapiente #Corporis
+          #Accusamus
+          #Possimus #Veniam
+        </p>
+        <p class="title">Find:</p>
+        <a href="/">https://www.ids.com/inforamtion/bootstrap-library-equality-ids-examp-studen-ids-performance</a>
+        <p class="title">Socials:</p>
+        <div class="socials">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Icon/Social/Email">
+              <g id="mail-5726">
+                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M42.9525 4H5.04747C2.26453 4 0 6.55668 0 9.69863V38.3014C0 41.4439 2.26453 44 5.04747 44H42.9525C45.736 44 48 41.4439 48 38.3014V9.69863C48 6.55668 45.736 4 42.9525 4ZM5.04747 7.61283H42.9525C43.9712 7.61283 44.8 8.54855 44.8 9.69863V12.6786L24.6357 23.1943C24.2315 23.4051 23.7675 23.4045 23.3632 23.1943L3.2 12.6786V9.69863C3.2 8.54855 4.0288 7.61283 5.04747 7.61283ZM3.2 38.3014C3.2 39.4515 4.0288 40.3872 5.04747 40.3872H42.9525C43.9712 40.3872 44.8 39.4515 44.8 38.3014V16.6581L25.9781 26.4742C25.3499 26.8017 24.6752 26.9655 24 26.9655C23.3248 26.9655 22.6501 26.8023 22.0213 26.4742L3.2 16.6587V38.3014Z" fill="black" />
+              </g>
+            </g>
+          </svg>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Icon/Social/Facebook">
+              <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M45.3509 0H2.64914C1.18591 0 0 1.1859 0 2.64913V45.3507C0 46.8137 1.18591 48 2.64914 48H25.6384V29.4118H19.383V22.1676H25.6384V16.8253C25.6384 10.6257 29.4249 7.24977 34.9555 7.24977C37.6049 7.24977 39.8817 7.44688 40.5452 7.53501V14.0141L36.7094 14.0159C33.7016 14.0159 33.1191 15.4452 33.1191 17.5425V22.1676H40.2927L39.3587 29.4118H33.1191V48H45.3509C46.8139 48 48 46.8137 48 45.3507V2.64913C48 1.1859 46.8139 0 45.3509 0Z" fill="black" />
+              <mask id="mask0_0_3044" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+                <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M45.3509 0H2.64914C1.18591 0 0 1.1859 0 2.64913V45.3507C0 46.8137 1.18591 48 2.64914 48H25.6384V29.4118H19.383V22.1676H25.6384V16.8253C25.6384 10.6257 29.4249 7.24977 34.9555 7.24977C37.6049 7.24977 39.8817 7.44688 40.5452 7.53501V14.0141L36.7094 14.0159C33.7016 14.0159 33.1191 15.4452 33.1191 17.5425V22.1676H40.2927L39.3587 29.4118H33.1191V48H45.3509C46.8139 48 48 46.8137 48 45.3507V2.64913C48 1.1859 46.8139 0 45.3509 0Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_0_3044)">
+              </g>
+            </g>
+          </svg>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Icon/Social/Twitter">
+              <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M48 8.76923C46.2056 9.53846 44.4112 10.1538 42.3178 10.3077C44.4112 9.07692 45.9065 7.07692 46.6542 4.76923C44.7103 6 42.6168 6.76923 40.3738 7.23077C38.5794 5.23077 36.0374 4 33.3458 4C27.9626 4 23.4766 8.46154 23.4766 14.1538C23.4766 14.9231 23.6262 15.6923 23.7757 16.4615C15.5514 16 8.37383 12 3.43925 5.84615C2.54206 7.38462 2.09346 9.07692 2.09346 10.9231C2.09346 14.4615 3.88785 17.5385 6.42991 19.3846C4.78505 19.3846 3.28972 18.9231 1.94393 18.1538V18.3077C1.94393 23.2308 5.38318 27.2308 9.86916 28.1538C8.97196 28.3077 8.2243 28.4615 7.3271 28.4615C6.72897 28.4615 6.13084 28.4615 5.53271 28.3077C6.72897 32.3077 10.4673 35.2308 14.6542 35.3846C11.3645 38.1538 7.02804 39.6923 2.39252 39.6923C1.64486 39.6923 0.747664 39.6923 0 39.5385C4.48598 42.3077 9.71963 44 15.2523 44C33.3458 44 43.215 28.6154 43.215 15.2308V14C45.0093 12.4615 46.6542 10.7692 48 8.76923Z" fill="black" />
+            </g>
+          </svg>
+          <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.2729 21V12H25.3249V21C25.3249 21.5523 24.8888 22 24.3509 22H2.9223C2.38436 22 1.94827 21.5523 1.94827 21V12L0.000221252 12V21C0.000221252 22.6569 1.30848 24 2.9223 24H24.3509C25.9647 24 27.2729 22.6569 27.2729 21V21Z" fill="black" />
+            <path d="M7.40264 12L12.2728 17C13.0326 17.7754 14.2597 17.7754 15.0195 17L19.8896 12L18.5065 10.55L14.6104 14.55V0L12.6624 0V14.59L8.76627 10.59L7.40264 12Z" fill="black" />
+          </svg>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+<footer class="footer-knowledge">
+  <div class="container">
+    <div class="about-ids-ducimus">
+      <span class="footer-title">About IDS Ducimus minima dolore ab quos</span>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus excepturi fugit, iusto illum quis, corporis
+        corrupti necessitatibus magnam nisi deserunt ipsum tenetur voluptatibus eaque dolores. Natus consequuntur
+        recusandae illo. Ducimus minima dolore ab quos iusto est sed, quasi non beatae dolores omnis labore qui
+        temporibus laborum voluptas praesentium architecto ipsum officia voluptate ullam dicta eveniet quia. Quae magnam
+        quibusdam quidem accusantium qui excepturi ducimus amet, animi inventore dolores illum quisquam labore tenetur
+        blanditiis facere dolorum? Animi, sapiente. Sit autem quo hic numquam rerum dolorum laboriosam impedit
+        cupiditate ullam atque, magnam minus nulla vero recusandae obcaecati omnis, aut eveniet maiores iure officiis!
+        Quis asperiores facere laborum? Voluptas fuga atque in, accusantium nulla site.
+      </p>
+      <span>© 2021 Ducimus minima dolore</span>
+    </div>
+    <div class="about-ids">
+      <span class="footer-title">About IDS</span>
+      <p>IDS is, sapiente. Sit autem quo hic numquam rerum dolorum laboriosam impedit cupiditate ullam atque, magnam
+        minus nulla vero recusandae obcaecati omnis, aut eveniet maiores iure officiis! Quis asperiores facere laborum?
+        Voluptas fuga atque in, accusantium nulla sit possimus pariatur ullam vero ratione porro aliquam veniam sed
+        quisquam? Accusamus excepturi fugit, iusto.
+      </p>
+      <a href="/">Contact Us <svg width="31" height="13" viewBox="0 0 31 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Group">
+            <path id="Line 2" d="M1 6.5H30.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+            <path id="Path 2" d="M24 1L31 6.5L24 12" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </g>
+        </svg></a>
+    </div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+
+</html>
